@@ -3,6 +3,6 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="Crowdfunding"/>
-        <property name="java-output-path" value="/Crowdfunding/build/classes"/>
+        <property name="java-output-path" value="/CrowdfundingWebApp/bin"/>
     </wb-module>
 </project-modules>
