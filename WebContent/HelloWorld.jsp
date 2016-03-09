@@ -8,7 +8,6 @@
 </head>
 <body>
 
-plop
-
+<p> Plop </p>
 </body>
 </html>
