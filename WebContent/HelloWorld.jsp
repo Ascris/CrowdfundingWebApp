@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<!-- Entête de page  -->
+<div class="head">
+<h1>Crow Fooder</h1>
+
+ </div>
+
+
+<!-- Corps de la page  -->
 <p> Hello world</p>
+
 </body>
 </html>

@@ -9,4 +9,24 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	
+	<!-- Connexion ? -->
+	<servlet>
+	    <servlet-name>Connexion</servlet-name>
+	    <servlet-class>com.user.servlets</servlet-class>
+	    
+	    <init-param>
+	        <param-name>auteur</param-name> 
+	        <param-value>flodavid</param-value> 
+	    </init-param>
+	    
+    	<!-- <load-on-startup>1</load-on-startup -->
+	</servlet>
+	
+	<!-- Mapping connexion -->
+	<servlet-mapping>
+		<servlet-name>Connexion</servlet-name>
+		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
