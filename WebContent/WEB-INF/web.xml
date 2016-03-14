@@ -13,14 +13,14 @@
 	<!-- Connexion ? -->
 	<servlet>
 	    <servlet-name>Connexion</servlet-name>
-	    <servlet-class>com.user.servlets</servlet-class>
+	    <servlet-class>com.servlets.user</servlet-class>
 	    
 	    <init-param>
-	        <param-name>auteur</param-name> 
+	        <param-name>author</param-name> 
 	        <param-value>flodavid</param-value> 
 	    </init-param>
 	    
-    	<!-- <load-on-startup>1</load-on-startup -->
+    	<load-on-startup>1</load-on-startup>
 	</servlet>
 	
 	<!-- Mapping connexion -->
