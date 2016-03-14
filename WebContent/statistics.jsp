@@ -11,6 +11,11 @@
 
 	<p> Statistics of Crow Fooder </p> 
 
+	<p> Number of projects = </p>
+	<br>
+	<p> Total dollars collected </p>
+	<br>
+
 <%@ include file="/footer.html" %>
 </body>
 </html>
