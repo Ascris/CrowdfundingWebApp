@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Crow Fooder-Connexion</title>
+<title>Crow Fooder-<!-- TODO Il faudrait ajouter le Nom du projet --></title>
 </head>
 <body>
-
- <p>Ceci est une page générée depuis une JSP.</p>
 
 </body>
 </html>
