@@ -4,19 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Crow Fooder-Accueil</title>
 </head>
 <body>
 
-<!-- Entête de page  -->
-<div class="head">
-<h1>Crow Fooder</h1>
+<%@ include file="/headerConnexion.html" %>
+<!-- Contenu page -->
 
- </div>
+<h1>WELCOME on Crow Fooder !</h1>
+
+<h2>Become a crow fooder and join the awesome community of crow fooders</h2>
 
 
-<!-- Corps de la page  -->
-<p> Hello world</p>
+<!-- FIN_Contenu page -->
+<%@ include file="/footer.html" %>
 
 </body>
 </html>
