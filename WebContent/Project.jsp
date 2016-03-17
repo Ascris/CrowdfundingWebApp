@@ -12,6 +12,53 @@
 <!-- Contenu page -->
 
 
+<div class="category">
+	<p> Category : </p>
+</div>
+
+<div class="progressionBar">
+	<div class="remainingAmount">
+		<p> Remaining Amount : </p>
+	</div>
+	
+	<div class="timeline">
+		<p> Timeline : </p>
+	</div>
+</div>
+
+<div class="projectInfos">
+	<div class="projectName">
+		<p> Nom projet </p>
+	</div>
+	<p> by </p>
+	<div class="team">
+		<p> TeamName </p>
+	</div>
+	<div class="nbDonators">
+		<p> Donators : </p>
+	</div>
+</div>
+
+<div class="horizontalSeparator">
+	<div class="leftPart">
+		<div class="projectImage">
+			<a href="www.github.com"> PROJECT IMAGE </a>
+		</div>
+		<div class="Note"> 
+			<p> Note : </p>
+			<p> Etoiles a placer ici </p>
+		</div>
+		<div class="projectDescription"> 
+			<textarea> Description of the project </textarea>
+		</div>
+	</div>
+	<div class="rightBar">
+		<div class="palliate">
+			<textarea> Palliate reached ! </textarea>
+		</div>
+	</div>
+</div>
+
 <!-- FIN_Contenu page -->
 <%@ include file="/WEB-INF/footer.html" %>
 
