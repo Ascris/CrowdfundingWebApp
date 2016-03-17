@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%@ include file="/headerConnexion.html" %>
+<%@ include file="/WEB-INF/headerConnexion.html" %>
 <!-- Contenu page -->
 
 <h1>WELCOME on Crow Fooder !</h1>
@@ -17,7 +17,7 @@
 
 
 <!-- FIN_Contenu page -->
-<%@ include file="/footer.html" %>
+<%@ include file="/WEB-INF/footer.html" %>
 
 </body>
 </html>

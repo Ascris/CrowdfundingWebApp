@@ -8,14 +8,12 @@
 </head>
 <body>
 
-<%@ include file="/headerConnexion.html" %>
-
+<%@ include file="/WEB-INF/headerConnexion.html" %>
 <!-- Contenu page -->
 
 
 <!-- FIN_Contenu page -->
-
-<%@ include file="/footer.html" %>
+<%@ include file="/WEB-INF/footer.html" %>
 
 </body>
 </html>

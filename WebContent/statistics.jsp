@@ -7,7 +7,9 @@
 <title>Stats</title>
 </head>
 <body>
-<%@ include file="/headerConnexion.html" %>
+
+<%@ include file="/WEB-INF/headerConnexion.html" %>
+<!-- Contenu page -->
 
 	<p> Statistics of Crow Fooder </p> 
 
@@ -16,6 +18,7 @@
 	<p> Total dollars collected </p>
 	<br>
 
-<%@ include file="/footer.html" %>
+<!-- FIN_Contenu page -->
+<%@ include file="/WEB-INF/footer.html" %>
 </body>
 </html>

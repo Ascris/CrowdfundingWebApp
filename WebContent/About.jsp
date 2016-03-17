@@ -25,7 +25,7 @@ if(1 == User_connected) {
 }
 -->
 
-<%@ include file="/headerConnexion.html" %>
+<%@ include file="/WEB-INF/headerConnexion.html" %>
 
 
 <!-- Description site -->
@@ -43,7 +43,7 @@ if(1 == User_connected) {
 	<p> Crow Fooder - main page </p>
 </div>
 
-<%@ include file="/footer.html" %>
+<%@ include file="/WEB-INF/footer.html" %>
 
 </body>
 </html>

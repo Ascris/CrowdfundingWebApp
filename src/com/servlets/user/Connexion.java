@@ -26,6 +26,8 @@ public class Connexion extends HttpServlet {
 //	}
 	
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
+	    String message = "Transmission de variables : OK !";
+	    request.setAttribute( "test", message );
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/Connexion.jsp" ).forward( request, response );
 	}
 

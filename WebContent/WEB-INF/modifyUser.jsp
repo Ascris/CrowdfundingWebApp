@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<%@ include file="/headerConnexion.html" %>
+
+<%@ include file="/WEB-INF/headerConnexion.html" %>
+<!-- Contenu page -->
 
 <form class="profile">
   <p> New username : </p> <input type="text" name="username"> <br>
@@ -16,7 +18,7 @@
   <p> New email : </p> <input type="text" name="email"> <br>
 </form>
 
-<%@ include file="/footer.html" %>
+<%@ include file="/WEB-INF/footer.html" %>
 
 </body>
 </html>
