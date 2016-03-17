@@ -14,19 +14,19 @@ import javax.servlet.http.HttpServletResponse;
  * @author florian
  *
  */
-public class ModifyUser extends HttpServlet {
+public class Test extends HttpServlet {
 
 	private static final long serialVersionUID = -7069857314143602670L;
 	
 	/**
-	 * URL : http://localhost:8080/Crowdfunding/connexion
+	 * URL : http://localhost:8080/Crowdfunding/modifyUser
 	 */
-//	public Connexion() {
-//		// TODO Auto-generated constructor stub
-//	}
 	
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
-	    String message = "Transmission de variables dans ModifyUser : OK !";
+	    String paramAuteur = request.getParameter( "auteur" );
+
+	    String message = "Transmission de variables : OK ! " + paramAuteur;
+
 	    request.setAttribute( "test", message );
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/modifyUser.jsp" ).forward( request, response );
 	}

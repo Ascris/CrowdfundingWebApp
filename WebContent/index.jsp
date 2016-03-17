@@ -7,17 +7,23 @@
 <title>Crow Fooder-Accueil</title>
 </head>
 <body>
-
 <%@ include file="/WEB-INF/headerConnexion.html" %>
-<!-- Contenu page -->
 
-<h1>WELCOME on Crow Fooder !</h1>
+<!-- MAIN PAGE -->
+<div class=Hello>
+	<h1>WELCOME on Crow Fooder !</h1>
 
-<h2>Become a crow fooder and join the awesome community of crow fooders</h2>
+	<h2>Become a crow fooder and join the awesome community of crow fooders</h2>
+</div>
 
+		<p>Ceci est une page générée depuis une JSP.</p>
+        <p>
+            <% 
+            String attribut = (String) request.getAttribute("test");
+            out.println( attribut );
+            %>
+        </p>
 
-<!-- FIN_Contenu page -->
 <%@ include file="/WEB-INF/footer.html" %>
-
 </body>
 </html>

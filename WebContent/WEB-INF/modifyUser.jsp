@@ -18,6 +18,14 @@
   <p> New email : </p> <input type="text" name="email"> <br>
 </form>
 
+      <p>Ceci est une page générée depuis une JSP.</p>
+      <p>
+          <% 
+          String attribut = (String) request.getAttribute("test");
+          out.println( attribut );
+          %>
+      </p>
+        
 <%@ include file="/WEB-INF/footer.html" %>
 
 </body>
