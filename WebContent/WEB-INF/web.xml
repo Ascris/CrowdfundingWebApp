@@ -13,20 +13,37 @@
 	<!-- Connexion ? -->
 	<servlet>
 	    <servlet-name>Connexion</servlet-name>
-	    <servlet-class>com.servlets.user</servlet-class>
-	    
-	    <init-param>
+	    <servlet-class>com.servlets.user.Connexion</servlet-class>
+   
+<!-- 	    <init-param>
 	        <param-name>author</param-name> 
 	        <param-value>flodavid</param-value> 
-	    </init-param>
+	    </init-param> -->
 	    
     	<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<description>
+		Test sur BDD</description>
+		<display-name>GestionTestJDBC</display-name>
+		<servlet-name>GestionTestJDBC</servlet-name>
+		<servlet-class>com.servlets.user.GestionTestJDBC</servlet-class>
+		<init-param>
+			<description>
+			c'est moi</description>
+			<param-name>Test</param-name>
+			<param-value>dddd</param-value>
+		</init-param>
 	</servlet>
 	
 	<!-- Mapping connexion -->
 	<servlet-mapping>
 		<servlet-name>Connexion</servlet-name>
 		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GestionTestJDBC</servlet-name>
+		<url-pattern>/GestionTestJDBC</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
