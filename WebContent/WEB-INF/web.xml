@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<web-app 
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+	
 	<display-name>CrowdfundingWebApp</display-name>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
@@ -12,15 +17,16 @@
 	
 	<!-- Connexion ? -->
 	<servlet>
-	    <servlet-name>modifyUser</servlet-name>
-	    <servlet-class>com.servlets.user.Connexion</servlet-class>
-  
- 	    <init-param>
-	        <param-name>author</param-name> 
-	        <param-value>flodavid</param-value> 
+		<description>Servlet test</description>
+	    <servlet-name>Test</servlet-name>
+	    <servlet-class>com.servlets.user.Test</servlet-class>
+	
+	    <init-param>
+	        <param-name>auteur</param-name> 
+	        <param-value>Coyote</param-value> 
 	    </init-param>
-	    
-    	<load-on-startup>1</load-on-startup>
+	
+	    <load-on-startup>1</load-on-startup>
 	</servlet>
 	
 	<!-- Test BDD ? -->
@@ -29,20 +35,20 @@
 		<display-name>GestionTestJDBC</display-name>
 		<servlet-name>GestionTestJDBC</servlet-name>
 		<servlet-class>com.servlets.user.GestionTestJDBC</servlet-class>
-		<init-param>
+<!-- 		<init-param>
 			<description>
 			c'est moi</description>
 			<param-name>Test</param-name>
 			<param-value>dddd</param-value>
-		</init-param>
+		</init-param> -->
 	</servlet>
 	
 	
 	
 	<!-- Mapping connexion -->
 	<servlet-mapping>
-		<servlet-name>modifyUser</servlet-name>
-		<url-pattern>/modifyuser</url-pattern>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/toto</url-pattern>
 	</servlet-mapping>
 	<!-- Mapping BDD ? -->
 	<servlet-mapping>
