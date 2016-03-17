@@ -4,19 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Crow Fooder-Création de projet</title>
 </head>
 <body>
 
-<!-- Entête de page  -->
-<div class="head">
-<h1>Crow Fooder</h1>
+<%@ include file="/headerConnexion.html" %>
 
- </div>
+<!-- Contenu page -->
 
 
-<!-- Corps de la page  -->
-<p> Hello world</p>
+<!-- FIN_Contenu page -->
+
+<%@ include file="/footer.html" %>
 
 </body>
 </html>

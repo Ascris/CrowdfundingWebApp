@@ -4,11 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Connexion</title>
+<title>Crow Fooder-Team <!-- TODO Nom de la team --></title>
 </head>
 <body>
 
- <p>Ceci est une page générée depuis une JSP.</p>
+<%@ include file="/headerConnexion.html" %>
+
+<!-- Contenu page -->
+
+
+<!-- FIN_Contenu page -->
+
+<%@ include file="/footer.html" %>
 
 </body>
 </html>
