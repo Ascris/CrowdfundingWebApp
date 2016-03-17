@@ -12,7 +12,7 @@
 	
 	<!-- Connexion ? -->
 	<servlet>
-	    <servlet-name>Connexion</servlet-name>
+	    <servlet-name>modifyUser</servlet-name>
 	    <servlet-class>com.servlets.user.Connexion</servlet-class>
   
  	    <init-param>
@@ -41,8 +41,8 @@
 	
 	<!-- Mapping connexion -->
 	<servlet-mapping>
-		<servlet-name>Connexion</servlet-name>
-		<url-pattern>/connexion</url-pattern>
+		<servlet-name>modifyUser</servlet-name>
+		<url-pattern>/modifyuser</url-pattern>
 	</servlet-mapping>
 	<!-- Mapping BDD ? -->
 	<servlet-mapping>

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author florian
  *
  */
-public class Connexion extends HttpServlet {
+public class ModifyUser extends HttpServlet {
 
 	private static final long serialVersionUID = -7069857314143602670L;
 	
@@ -26,9 +26,9 @@ public class Connexion extends HttpServlet {
 //	}
 	
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
-	    String message = "Transmission de variables : OK !";
+	    String message = "Transmission de variables dans ModifyUser : OK !";
 	    request.setAttribute( "test", message );
-		this.getServletContext().getRequestDispatcher( "/WEB-INF/Connexion.jsp" ).forward( request, response );
+		this.getServletContext().getRequestDispatcher( "/WEB-INF/modifyUser.jsp" ).forward( request, response );
 	}
 
 }

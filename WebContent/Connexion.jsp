@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Sign in</title>
+<title>Log in</title>
 </head>
 <body>
 
-<%@ include file="headerConnexion.html" %>
+<%@ include file="/WEB-INF/headerConnexion.html" %>
 
 <form class="profile">
   <p> Username : </p> <input type="text" name="username"> <br>
@@ -16,7 +16,7 @@
   <p> Email : </p> <input type="text" name="email"> <br>
 </form>
 
-<%@ include file="footer.html" %>
+<%@ include file="/WEB-INF/footer.html" %>
 
 </body>
 </html>

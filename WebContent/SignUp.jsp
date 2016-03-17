@@ -4,20 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Crow Fooder-Modify Profile</title>
+<title>Crow Fooder-Sign up</title>
 </head>
 <body>
-
 
 <%@ include file="/WEB-INF/headerConnexion.html" %>
 <!-- Contenu page -->
 
-<form class="profile">
-  <p> New username : </p> <input type="text" name="username"> <br>
-  <p> New password : </p> <input type="password" name="password"> <br>
-  <p> New email : </p> <input type="text" name="email"> <br>
-</form>
 
+
+<!-- FIN_Contenu page -->
 <%@ include file="/WEB-INF/footer.html" %>
 
 </body>
