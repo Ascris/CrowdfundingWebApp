@@ -23,9 +23,9 @@ public class Test extends HttpServlet {
 	 */
 	
 	public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
-	    String paramAuteur = request.getParameter( "auteur" );
+//	    String paramAuteur = request.getParameter( "auteur" );
 
-	    String message = "Transmission de variables : OK ! " + paramAuteur;
+	    String message = "Transmission de variables : OK ! ";
 
 	    request.setAttribute( "test", message );
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/modifyUser.jsp" ).forward( request, response );
