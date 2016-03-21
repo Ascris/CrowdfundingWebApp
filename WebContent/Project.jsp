@@ -11,10 +11,6 @@
 <jsp:include page="/WEB-INF/headerConnexion.jsp" />
 <!-- Contenu page -->
 
-<button class="btn btn-warning">
-Hi
-</button>
-
 <div class="container-fluid">
 	<p> Category : </p>
 </div>
