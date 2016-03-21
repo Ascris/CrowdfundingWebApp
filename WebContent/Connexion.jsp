@@ -18,15 +18,9 @@
 
 <div class="container-fluid">
 	<form class="profile">
-		<div class="row">
-			<p> Username : </p> <input type="text" name="username"> <br>
-		</div>
-		<div class="row">
-			<p> Password : </p> <input type="password" name="password"> <br>
-		</div>
-		<div class="row">
-			<p> Email : </p> <input type="text" name="email"> <br>
-		</div>
+		<p> Username : </p> <input type="text" name="username"> <br>
+		<p> Password : </p> <input type="password" name="password"> <br>
+		<p> Email : </p> <input type="text" name="email"> <br>
 	</form>
 </div>
 
