@@ -5,6 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Bootstrap required head -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap required head-->
+
 <title>About Crow Fooder</title>
 </head>
 
@@ -27,20 +33,25 @@ if(1 == User_connected) {
 
 <%@ include file="/WEB-INF/headerConnexion.html" %>
 
-
-<!-- Description site -->
-<div class=Description_site>
-	<p> This web site has been created as a crowdfunding site </p>
-	<br>
-	<div align="initial_members_horizontal">
-		<p> Initial members </p>
-		<textarea class="members"> </textarea>
+<div class="container-fluid">
+	<div class=Description_site>
+		<div class="row">
+			<p> This web site has been created as a crowdfunding site </p> <br>
+		</div>
+		<div class="row">
+			<div align="initial_members_horizontal">
+				<p> Initial members </p>
+				<textarea class="members"> </textarea>
+			</div>
+		</div>
 	</div>
 </div>
 
-<!-- MAIN PAGE -->
-<div class=Background_about>
-	<p> Crow Fooder - main page </p>
+
+<div class="container-fluid">
+	<div class="Background_about">
+		<p> Crow Fooder - main page </p>
+	</div>
 </div>
 
 <%@ include file="/WEB-INF/footer.html" %>

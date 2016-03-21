@@ -4,17 +4,31 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Bootstrap required head -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap required head-->
+
 <title>Log in</title>
 </head>
 <body>
 
 <%@ include file="/WEB-INF/headerConnexion.html" %>
 
-<form class="profile">
-  <p> Username : </p> <input type="text" name="username"> <br>
-  <p> Password : </p> <input type="password" name="password"> <br>
-  <p> Email : </p> <input type="text" name="email"> <br>
-</form>
+<div class="container-fluid">
+	<form class="profile">
+		<div class="row">
+			<p> Username : </p> <input type="text" name="username"> <br>
+		</div>
+		<div class="row">
+			<p> Password : </p> <input type="password" name="password"> <br>
+		</div>
+		<div class="row">
+			<p> Email : </p> <input type="text" name="email"> <br>
+		</div>
+	</form>
+</div>
 
 <%@ include file="/WEB-INF/footer.html" %>
 

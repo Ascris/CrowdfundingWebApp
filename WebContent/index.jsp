@@ -5,25 +5,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!-- Bootstrap required head
+<!-- Bootstrap required head -->
 <link href=”bootstrap/css/bootstrap.min.css” rel=”stylesheet” type=”text/css” />
 <script type=”text/javascript” src=”bootstrap/js/bootstrap.min.js”></script>
-Bootstrap required head-->
-
-<link href="csstest.css" rel="stylesheet" type="text/css" />
+<!-- Bootstrap required head-->
 
 <title>Crow Fooder-Accueil</title>
 </head>
+
 <body>
 <%@ include file="/WEB-INF/headerConnexion.html" %>
 
 <!-- MAIN PAGE -->
-<div class=Hello>
-	<h1>WELCOME on Crow Fooder !</h1>
-
-	<h2>Become a crow fooder and join the awesome community of crow fooders</h2>
+<div class="container-fluid">
+	<div class="row">
+		<h1>WELCOME on Crow Fooder !</h1>
+	</div>
+	<div class="row">
+		<h2>Become a crow fooder and join the awesome community of crow fooders</h2>
+	</div>
 </div>
 
+<div class="container-fluid">
 		<p>Ceci est une page générée depuis une JSP.</p>
         <p>
             <% 
@@ -31,6 +34,7 @@ Bootstrap required head-->
             out.println( attribut );
             %>
         </p>
+</div>
 
 <%@ include file="/WEB-INF/footer.html" %>
 </body>
