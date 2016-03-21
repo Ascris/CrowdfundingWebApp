@@ -25,9 +25,6 @@ if(1 == User_connected) {
 }
 -->
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" />
-
-
 <div class="container-fluid">
 	<div class=Description_site>
 		<div class="row">
