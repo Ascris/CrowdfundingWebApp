@@ -6,7 +6,7 @@
 <%! String title = "Contact";  %>
 <%@ include file="WEB-INF/head.jsp" %>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="/WEB-INF/headerConnexion.jsp" />
 <!-- Contenu page -->
 
 

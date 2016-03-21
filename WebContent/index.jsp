@@ -8,7 +8,7 @@
 
 <body>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="/WEB-INF/headerConnexion.jsp" />
 <!-- Contenu page -->
 
 <!-- MAIN PAGE -->
