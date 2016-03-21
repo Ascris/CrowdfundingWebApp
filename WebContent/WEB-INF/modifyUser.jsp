@@ -14,8 +14,7 @@
 </head>
 <body>
 
-
-<%@ include file="/WEB-INF/headerConnexion.html" %>
+<jsp:include page="/WEB-INF/headerConnexion.jsp" />
 <!-- Contenu page -->
 
 <div class="container-fluid">
@@ -36,7 +35,7 @@
       </p>
 </div>
 
-<%@ include file="/WEB-INF/footer.html" %>
+<jsp:include page="/WEB-INF/footer.jsp" />
 
 </body>
 </html>
