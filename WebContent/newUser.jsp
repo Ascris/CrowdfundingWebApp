@@ -17,10 +17,11 @@
 <%@ include file="WEB-INF/headerConnexion.html" %>
 
 <div class="container-fluid">
-	<form class="profile">
-	  <p> Username : </p> <input type="text" name="username"> <br>
-	  <p> Password : </p> <input type="password" name="password"> <br>
-	  <p> Email : </p> <input type="text" name="email"> <br>
+	<form class="form-group">
+	  <p> Username : </p> <input type="text" name="username" class="form-group has-feedback"> <br>
+	  <p> Password : </p> <input type="password" name="password" class="form-group has-feedback"> <br>
+	  <p> Email : </p> <input type="text" name="email" class="form-group has-feedback"> <br>
+	  <button type="submit" class="btn btn-default">Submit</button>
 	</form>
 </div>
 

@@ -18,10 +18,11 @@
 <%@ include file="WEB-INF/headerConnexion.html" %>
 
 <div class="container-fluid">
-	<form class="team">
-	  <p> Team name : </p> <input type="text" name="username"> <br>
-	  <p> Team email : </p> <input type="text" name="email"> <br>
-	  <p> Team members : </p> <textarea> </textarea>
+	<form class="form-group">
+	  <p> Team name : </p> <input type="text" class="form-group has-feedback" name="username"> <br>
+	  <p> Team email : </p> <input type="text" class="form-group has-feedback" name="email"> <br>
+	  <p> Team members : </p> <textarea class="form-group has-feedback" name="members"> </textarea>
+	  <button type="submit" class="btn btn-default">Submit</button>
 	</form>
 </div>
 

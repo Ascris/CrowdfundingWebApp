@@ -63,6 +63,19 @@ Hi
 </div>
 
 <div class="container-fluid">
+	<form class="form-inline">
+		<div class="form-group">
+			<label class="sr-only" for="exampleInputAmount">Don :</label>
+			<div class="input-group">
+		    	<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+				<div class="input-group-addon">€</div>
+		  	</div>
+		</div>
+		<button type="submit" class="btn btn-primary">Participer au projet !</button>
+	</form>
+</div>
+
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
 			<div class="row">
