@@ -17,7 +17,7 @@
 
 <%@ include file="WEB-INF/headerConnexion.html" %>
 
-<div class="containder-fluid">
+<div class="container-fluid">
 	<form class="team">
 	  <p> Team name : </p> <input type="text" name="username"> <br>
 	  <p> Team email : </p> <input type="text" name="email"> <br>

@@ -4,19 +4,31 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Bootstrap required head -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap required head-->
+
 <title>Stats</title>
 </head>
+
 <body>
 
 <%@ include file="/WEB-INF/headerConnexion.html" %>
 <!-- Contenu page -->
 
-	<p> Statistics of Crow Fooder </p> 
-
-	<p> Number of projects = </p>
-	<br>
-	<p> Total dollars collected </p>
-	<br>
+<div class="container-fluid">
+	<div class="row">
+		<p> Statistics of Crow Fooder </p> <br>
+	</div>
+	<div class="row">
+		<p> Number of projects = </p> <br>
+	</div>
+	<div class="row">
+		<p> Total dollars collected </p> <br>
+	</div>
+</div>
 
 <!-- FIN_Contenu page -->
 <%@ include file="/WEB-INF/footer.html" %>
