@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%@ include file="/headerConnexion.html" %>
+<%@ include file="WEB-INF/headerConnexion.html" %>
 
 <form class="team">
   <p> Team name : </p> <input type="text" name="username"> <br>
@@ -16,7 +16,7 @@
   <p> Team members : </p> <textarea> </textarea>
 </form>
 
-<%@ include file="/footer.html" %>
+<%@ include file="WEB-INF/footer.html" %>
 
 </body>
 </html>
