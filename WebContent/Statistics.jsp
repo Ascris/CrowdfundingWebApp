@@ -8,17 +8,20 @@
 
 <body>
 
-
 <jsp:include page="/WEB-INF/headerConnexion.jsp" >
 <!-- Contenu page -->
 
-	<p> Statistics of Crow Fooder </p> 
-
-	<p> Number of projects = </p>
-	<br>
-	<p> Total dollars collected </p>
-	<br>
-
+<div class="container-fluid">
+	<div class="row">
+		<p> Statistics of Crow Fooder </p> <br>
+	</div>
+	<div class="row">
+		<p> Number of projects = </p> <br>
+	</div>
+	<div class="row">
+		<p> Total dollars collected </p> <br>
+	</div>
+</div>
 
 
 <!-- FIN_Contenu page -->

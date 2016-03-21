@@ -5,8 +5,8 @@
 
 <%! String title = "Project";  %>
 <%@ include file="WEB-INF/head.jsp" %>
-<body>
 
+<body>
 
 <jsp:include page="/WEB-INF/headerConnexion.jsp" >
 <!-- Contenu page -->

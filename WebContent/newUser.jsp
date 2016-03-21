@@ -6,14 +6,18 @@
 <%! String title = "New Profile";  %>
 <%@ include file="WEB-INF/head.jsp" %>
 
+<body>
+
 <jsp:include page="/WEB-INF/headerConnexion.jsp" >
 <!-- Contenu page -->
 
-<form class="profile">
-  <p> Username : </p> <input type="text" name="username"> <br>
-  <p> Password : </p> <input type="password" name="password"> <br>
-  <p> Email : </p> <input type="text" name="email"> <br>
-</form>
+<div class="container-fluid">
+	<form class="profile">
+	  <p> Username : </p> <input type="text" name="username"> <br>
+	  <p> Password : </p> <input type="password" name="password"> <br>
+	  <p> Email : </p> <input type="text" name="email"> <br>
+	</form>
+</div>
 
 
 

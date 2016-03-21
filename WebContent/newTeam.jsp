@@ -6,10 +6,12 @@
 <%! String title = "New Team";  %>
 <%@ include file="WEB-INF/head.jsp" %>
 
+<body>
+
 <jsp:include page="/WEB-INF/headerConnexion.jsp" >
 <!-- Contenu page -->
 
-<div class="containder-fluid">
+<div class="container-fluid">
 	<form class="team">
 	  <p> Team name : </p> <input type="text" name="username"> <br>
 	  <p> Team email : </p> <input type="text" name="email"> <br>
