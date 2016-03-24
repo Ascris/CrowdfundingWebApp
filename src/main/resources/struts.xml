@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- On trouve ici la liste des actions possibles. Chaque action est définie 
+			grâce à un attribut name, auquel on fera référence pour appeler l'action, 
+			un attribut class, qui référence la classe Java correspondante et finalement 
+			un attribut method, dans laquel on trouvera les traitements effectués par 
+			l'action. Dans cette action, on peut trouver des balises result, qui associe 
+			à la chaine renvoyée par l'action un résultat. Dans le cas de listCustomerAction 
+			par exemple, si la méthode listCustomerAction de la classe ListCustomerAction 
+			renvoie la chaine "success", on redirigera le client sur la page customer.jsp -->
+
+		<action name="listCustomerAction" class="listCustomerAction"
+			method="listCustomer">
+			<result name="success">pages/customer.jsp</result>
+		</action>
+
+		<!-- Ici, on remarque que le resultat ne redirige pas sur une page mais 
+			sur une autre action. On doit donc ajouter l'attribut type="redirect" -->
+		<action name="deleteCustomerAction" class="listCustomerAction"
+			method="deleteCustomer">
+			<result name="success" type="redirect">listCustomerAction</result>
+		</action>
+
+		<action name="editCustomerAction" class="editCustomerAction"
+			method="editCustomer">
+			<result name="success">pages/editCustomer.jsp</result>
+		</action>
+
+		<action name="saveCustomerAction" class="editCustomerAction"
+			method="saveCustomer">
+			<result name="success" type="redirect">listCustomerAction</result>
+		</action>
+
+		<action name="addOrderAction" class="listCustomerAction"
+			method="addOrder">
+			<result name="success" type="redirect">listCustomerAction</result>
+		</action>
+
+		<action name="deleteOrderAction" class="listCustomerAction"
+			method="deleteOrder">
+			<result name="success" type="redirect">listCustomerAction</result>
+		</action>
+
+	</package>
+
+</struts>
