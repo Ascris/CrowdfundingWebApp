@@ -9,7 +9,7 @@
 
 <body>
 
-<jsp:include page="/helpers/headerConnexion.html" />
+<jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
 <button class="btn btn-warning">
@@ -81,7 +81,7 @@ Hi
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="/helpers/footer.html" />
+<%@ include file="/helpers/footer.html" %>
 
 </body>
 </html>

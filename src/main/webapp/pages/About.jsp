@@ -6,21 +6,10 @@
    <jsp:param name="title" value="Accueil"/>
 </jsp:include>
 
-<!-- HEADER 
-<Home_button class="left">
-if(1 == User_connected) {
-	<Connected_user>
-		<Modify_profile />
-		<Log_out />
-	</Connected_user>
-} else {
-	<Connection_bar>
-		<Sign_in />
-		<Log_in/>
-	</Connection_bar>
-</Home_button>
-}
--->
+<body>
+
+<jsp:include page="/helpers/headerConnexion.jsp"/>
+<!-- Contenu page -->
 
 <div class="container-fluid">
 	<div class=Description_site>

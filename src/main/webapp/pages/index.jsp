@@ -9,7 +9,7 @@
 
 <body>
 
-<%@ include file="/helpers/headerConnexion.html" %>
+<jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
 <h1>WELCOME on Crow Fooder !</h1>

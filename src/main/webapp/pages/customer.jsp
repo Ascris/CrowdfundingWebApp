@@ -3,12 +3,14 @@
 
 <jsp:include page="/helpers/head_balise.jsp" >
    <jsp:param name="title" value="Customer"/>
+   <!-- TODO ajouter des paramètres ? -->
 </jsp:include>
 
 <body>
 
-<%@ include file="/helpers/headerConnexion.html" %>
+<jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
+
 
 	<h1>Les Fooders</h1>
 
@@ -79,7 +81,8 @@
 	<button onclick="window.location.href='/spring/pages/index.jsp'">Accueil</button>
 	
 <!-- FIN_Contenu page -->
-<jsp:include page="/helpers/footer.html" />
+<%@ include file="/helpers/footer.html" %>
+
 </body>
 
 </html>
