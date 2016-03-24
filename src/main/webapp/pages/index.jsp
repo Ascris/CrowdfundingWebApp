@@ -21,7 +21,7 @@
 </div>
 
 <!-- FIN_Contenu page -->
-<%@ include file="../helpers/footer.html" %>
+<%@ include file="../helpers/footer.jsp" %>
 
 </body>
 </html>

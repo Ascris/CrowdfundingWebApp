@@ -2,8 +2,8 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="headerConnexion">
-			<button onclick="window.location.href='/Crowdfunding/SignUp.jsp'">Sign up</button>
-			<button onclick="window.location.href='/Crowdfunding/Connexion.jsp'">Log in</button>
+			<button onclick="window.location.href='/spring/pages/editCustomer.jsp'">Sign up</button>
+			<button onclick="window.location.href='/Crowdfunding/connexion'">Log in</button>
 		</div>
 	</div>
 </div>
@@ -13,8 +13,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="headerConnexion">
-			<button onclick="window.location.href='/user'">Modify Profile</button>
-			<a href="/user">modify ???</a>
+			<button onclick="window.location.href='/modifyProfile'">Modify Profile</button>
 			<button onclick="window.location.href='/'">Log out</button>
 		</div>
 	</div>

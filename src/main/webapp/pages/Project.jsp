@@ -4,11 +4,11 @@
 <html>
 
 <%! String title = "Project";  %>
-<%@ include file="../WEB-INF/head.jsp" %>
+<%@ include file="../helpers/head.jsp" %>
 
 <body>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="../helpers/headerConnexion.jsp" >
 <!-- Contenu page -->
 
 <button class="btn btn-warning">
@@ -81,7 +81,7 @@ Hi
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="/WEB-INF/footer.jsp" />
+<jsp:include page="../helpers/footer.jsp" />
 
 </body>
 </html>

@@ -4,11 +4,11 @@
 <html>
 
 <%! String title = "Stats";  %>
-<%@ include file="../WEB-INF/head.jsp" %>
+<%@ include file="../helpers/head.jsp" %>
 
 <body>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="../helpers/headerConnexion.jsp" >
 <!-- Contenu page -->
 
 <div class="container-fluid">
@@ -25,6 +25,6 @@
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="/WEB-INF/footer.jsp" />
+<jsp:include page="../helpers/footer.jsp" />
 </body>
 </html>

@@ -1,7 +1,7 @@
 <%@ page pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
-    <head>"/home/florian/workspace/JEE/CrowdfundingWebApp"
+    <head>
         <meta charset="utf-8" />
         <title>Test</title>
     </head>

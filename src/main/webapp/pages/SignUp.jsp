@@ -4,17 +4,17 @@
 <html>
 
 <%! String title = "Sign up";  %>
-<%@ include file="../WEB-INF/head.jsp" %>
+<%@ include file="../helpers/head.jsp" %>
 
 <body>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="../helpers/headerConnexion.jsp" >
 <!-- Contenu page -->
 
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="/WEB-INF/footer.jsp" />
+<jsp:include page="../helpers/footer.jsp" />
 
 </body>
 </html>
