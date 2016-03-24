@@ -2,13 +2,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<jsp:include page="../helpers/head.jsp" >
+<jsp:include page="/helpers/head_balise.jsp" >
    <jsp:param name="title" value="Log in"/>
 </jsp:include>
 
 <body>
 
-<jsp:include page="/helpers/headerConnexion.html" />
+<%@ include file="/helpers/headerConnexion.html" %>
 <!-- Contenu page -->
 
 <div class="container-fluid">
@@ -19,7 +19,7 @@
 	</form>
 </div>
 
-<jsp:include page="/helpers/footer.jsp" />
+<jsp:include page="/helpers/footer.html" />
 
 </body>
 </html>

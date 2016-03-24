@@ -3,18 +3,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<%! String title = "Création de projet";  %>
-<%@ include file="../WEB-INF/head.jsp" %>
+<jsp:include page="/helpers/head_balise.jsp" >
+   <jsp:param name="title" value="Project Creation"/>
+</jsp:include>
 
 <body>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="/helpers/headerConnexion.html" />
 <!-- Contenu page -->
 
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="/WEB-INF/footer.jsp" />
+<jsp:include page="/helpers/footer.html" />
 
 </body>
 </html>

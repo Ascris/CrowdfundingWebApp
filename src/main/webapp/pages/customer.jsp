@@ -1,9 +1,15 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
-<head>
-</head>
+
+<jsp:include page="/helpers/head_balise.jsp" >
+   <jsp:param name="title" value="Customer"/>
+</jsp:include>
 
 <body>
+
+<%@ include file="/helpers/headerConnexion.html" %>
+<!-- Contenu page -->
+
 	<h1>Les Fooders</h1>
 
 	<!-- implicidement, customerList fait en fait appel à getCustomerList() -->
@@ -71,5 +77,9 @@
 		</table>
 	</s:if>
 	<button onclick="window.location.href='/spring/pages/index.jsp'">Accueil</button>
+	
+<!-- FIN_Contenu page -->
+<jsp:include page="/helpers/footer.html" />
 </body>
+
 </html>

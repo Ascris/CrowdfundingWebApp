@@ -2,13 +2,14 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Crow Fooder-Accueil</title>
-</head>
+
+<jsp:include page="/helpers/head_balise.jsp" >
+   <jsp:param name="title" value="Home"/>
+</jsp:include>
+
 <body>
 
-<%@ include file="../helpers/headerConnexion.html" %>
+<%@ include file="/helpers/headerConnexion.html" %>
 <!-- Contenu page -->
 
 <h1>WELCOME on Crow Fooder !</h1>
@@ -20,8 +21,9 @@
 	<button onclick="window.location='/spring/listCustomerAction'">Fooders</button>
 </div>
 
+
 <!-- FIN_Contenu page -->
-<%@ include file="../helpers/footer.html" %>
+<jsp:include page="/helpers/footer.html" />
 
 </body>
 </html>

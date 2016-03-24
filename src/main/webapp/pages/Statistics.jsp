@@ -3,13 +3,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<%! String title = "Stats";  %>
-<%@ include file="../WEB-INF/head.jsp" %>
+<jsp:include page="/helpers/head_balise.jsp" >
+   <jsp:param name="title" value="Stats"/>
+</jsp:include>
 
 <body>
 
-<jsp:include page="/WEB-INF/headerConnexion.jsp" >
+<jsp:include page="/helpers/headerConnexion.html" />
 <!-- Contenu page -->
+
 
 <div class="container-fluid">
 	<div class="row">
@@ -23,8 +25,8 @@
 	</div>
 </div>
 
-
 <!-- FIN_Contenu page -->
-<jsp:include page="/WEB-INF/footer.jsp" />
+<jsp:include page="/helpers/footer.html" />
+
 </body>
 </html>

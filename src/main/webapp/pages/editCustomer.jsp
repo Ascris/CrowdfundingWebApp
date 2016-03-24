@@ -16,5 +16,6 @@
 		<s:submit value="Valider" />
 	</s:form>
 	<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
+
 </body>
 </html>

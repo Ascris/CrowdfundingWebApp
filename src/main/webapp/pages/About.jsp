@@ -3,12 +3,16 @@
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<%! String title = "About Crow Fooder";  %>
-<%@ include file="/helpers/head.jsp" %>
 
-<jsp:include page="/helpers/headerConnexion.jsp" />
+<jsp:include page="/helpers/head_balise.jsp" >
+   <jsp:param name="title" value="Accueil"/>
+</jsp:include>
 
 <body>
+
+<%@ include file="/helpers/headerConnexion.html" %>
+<!-- Contenu page -->
+
 <!-- HEADER 
 <Home_button class="left">
 if(1 == User_connected) {
@@ -46,7 +50,7 @@ if(1 == User_connected) {
 	</div>
 </div>
 
-<jsp:include page="/helpers/footer.jsp" />
+<jsp:include page="/helpers/footer.html" />
 
 </body>
 </html>
