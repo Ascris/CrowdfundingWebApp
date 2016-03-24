@@ -1,0 +1,5 @@
+Modifier dossier "compilation" :
+Clic droit à la racine du projet -> Build Path -> Configure Build Path ...
+Onglet Sources
+Metter le champ "Default Output Folder" à :
+	Crowdfunding/WebContent/WEB-INF/classes
