@@ -3,12 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<%! String title = "Project";  %>
-<%@ include file="../helpers/head.jsp" %>
+<jsp:include page="../helpers/head.jsp" >
+   <jsp:param name="title" value="Project"/>
+</jsp:include>
 
 <body>
 
-<jsp:include page="../helpers/headerConnexion.jsp" >
+<jsp:include page="/helpers/headerConnexion.html" />
 <!-- Contenu page -->
 
 <button class="btn btn-warning">
@@ -81,7 +82,7 @@ Hi
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="../helpers/footer.jsp" />
+<jsp:include page="/helpers/footer.jsp" />
 
 </body>
 </html>
