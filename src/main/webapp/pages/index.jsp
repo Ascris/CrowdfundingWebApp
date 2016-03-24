@@ -23,7 +23,7 @@
 
 
 <!-- FIN_Contenu page -->
-<jsp:include page="/helpers/footer.html" />
+<%@ include file="/helpers/footer.html" %>
 
 </body>
 </html>

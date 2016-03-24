@@ -14,8 +14,6 @@ des infos de cette équipe sur la page (+nom de l'équipe dans param "title"-->
 <!-- Contenu page -->
 
 
-
-
 <!-- FIN_Contenu page -->
 <jsp:include page="/helpers/footer.html" />
 

@@ -6,11 +6,6 @@
    <jsp:param name="title" value="Log in"/>
 </jsp:include>
 
-<body>
-
-<%@ include file="/helpers/headerConnexion.html" %>
-<!-- Contenu page -->
-
 <div class="container-fluid">
 	<form class="profile">
 		<p> Username : </p> <input type="text" name="username"> <br>
@@ -19,7 +14,7 @@
 	</form>
 </div>
 
-<jsp:include page="/helpers/footer.html" />
 
-</body>
+<%@ include file="/helpers/footer.html" %>
+
 </html>

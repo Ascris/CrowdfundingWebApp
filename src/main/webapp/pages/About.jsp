@@ -1,17 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
+<%@ taglib prefix="s" uri="/struts-tags"%>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <jsp:include page="/helpers/head_balise.jsp" >
    <jsp:param name="title" value="Accueil"/>
 </jsp:include>
-
-<body>
-
-<%@ include file="/helpers/headerConnexion.html" %>
-<!-- Contenu page -->
 
 <!-- HEADER 
 <Home_button class="left">
@@ -50,7 +43,6 @@ if(1 == User_connected) {
 	</div>
 </div>
 
-<jsp:include page="/helpers/footer.html" />
+<%@ include file="/helpers/footer.html" %>
 
-</body>
 </html>
