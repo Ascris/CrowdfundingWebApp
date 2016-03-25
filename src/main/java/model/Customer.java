@@ -42,6 +42,7 @@ import dto.OrderCustomerDTO;
 @NamedQueries({
 		@NamedQuery(name = "Customer.findByName", query = "from Customer c where c.name = :name"),
 		@NamedQuery(name = "Customer.findByAdress", query = "from Customer c where c.address = :address"),
+		@NamedQuery(name = "Customer.findByUsernameAndMdp", query = "from Customer c where c.mdp = :mdp and c.username = :username"),
 		@NamedQuery(name = "Customer.findByNameAndAddress", query = "from Customer c where c.address = :address and c.name = :name"),
 		@NamedQuery(name = "Customer.findByOrderCustomerId", query = "select c from Customer c join c.orderCustomers as o where o is not empty and o.orderCustomerId = :orderCustomerId")})
 public class Customer implements Serializable {

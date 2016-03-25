@@ -34,6 +34,7 @@ public interface CustomerService {
 	public void deleteCustomer(final Long customerId);
 
 	public CustomerDTO getCustomerById(final Long customerId);
+	public CustomerDTO getCustomerByUsernameAndMdp(final String username,final String mdp);
 
 	/**
 	 * Cette méthode permet d'enregistrer un client en base de données. Le

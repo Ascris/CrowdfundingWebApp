@@ -5,7 +5,7 @@
 		<div class="headerConnexion">
 			<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
 			<button onclick="window.location.href='/spring/pages/editCustomer.jsp'">Sign up</button>
-			<button onclick="window.location.href='/Crowdfunding/connexion'">Sign in</button>
+			<button onclick="window.location.href='/spring/pages/connectCustomer.jsp'">Sign in</button>
 		</div>
 	</div>
 </div>

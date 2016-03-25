@@ -66,6 +66,14 @@ public class CustomerDAOImpl extends GenericDAOImpl<Customer, Long> implements C
 		return (Customer) query.uniqueResult();
 	}
 	
+	public Customer findByUsernameAndMdp(final String mdp, final String username){
+		final Query query = getSession().getNamedQuery(
+				"Customer.findByUsernameAndMdp");
+		query.setParameter("mdp", mdp);
+		query.setParameter("username", username);
+		return (Customer) query.uniqueResult();
+	}
+	
 	 @Autowired
      @Override
      public void setSessionFactory(SessionFactory sessionFactory) {

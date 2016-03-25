@@ -47,6 +47,12 @@
 			method="deleteOrder">
 			<result name="success" type="redirect">listCustomerAction</result>
 		</action>
+		
+		<action name="connexionAction" class="connexionAction" 
+			method="connectAction">
+			<result name="success" >editCustomer.jsp</result>
+			<result name="error">index.jsp</result>		
+		</action>
 
 	</package>
 

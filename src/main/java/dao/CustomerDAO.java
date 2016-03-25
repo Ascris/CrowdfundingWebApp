@@ -61,4 +61,6 @@ public interface CustomerDAO extends GenericDAO<Customer, Long> {
 	List<Customer> findByNameAndAddress(final String name, final String address);
 
 	public Customer findByOrder(final Long orderCustomerId);
+	
+	public Customer findByUsernameAndMdp(final String mdp, final String username);
 }
