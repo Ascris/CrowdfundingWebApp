@@ -1,4 +1,3 @@
-
 <!--  No User Connected -->
 <div class="container-fluid">
 	<div class="row">
@@ -16,7 +15,7 @@
 	<div class="row">
 		<div class="headerConnexion">
 			<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
-			<button onclick="window.location.href='/modifyProfile.jsp'">Modify Profile</button>
+			<button onclick="window.location.href='/spring/pages/editCustomer.jsp'">Modify Profile</button>
 			<button onclick="window.location.href='/'">Log out</button>
 		</div>
 	</div>
