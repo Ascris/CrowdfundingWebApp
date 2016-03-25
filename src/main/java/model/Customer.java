@@ -206,6 +206,10 @@ public class Customer implements Serializable {
 	public void setOrderCustomers(List<OrderCustomer> orderCustomers) {
 		this.orderCustomers = orderCustomers;
 	}
+	
+	public String to_string(){
+		return ("Mon nom est : "+username);
+	}
 
 	public CustomerDTO entity2Bean() {
 		return new CustomerDTO(this.customerId, this.name, this.address, this.createdDate,

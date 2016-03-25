@@ -50,8 +50,13 @@
 		
 		<action name="connexionAction" class="connexionAction" 
 			method="connectAction">
-			<result name="success" >editCustomer.jsp</result>
-			<result name="error">index.jsp</result>		
+			<result name="success" >index.jsp</result>
+			<result name="error">connexionError.jsp</result>		
+		</action>
+		
+		<action name="clearConnexion" class="connexionAction" 
+			method="clearConnexion">
+			<result name="success" >index.jsp</result>
 		</action>
 
 	</package>

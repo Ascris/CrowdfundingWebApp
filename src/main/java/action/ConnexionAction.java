@@ -1,12 +1,14 @@
 package action;
 
 import java.io.IOException;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.opensymphony.xwork2.ActionContext;
 
@@ -14,6 +16,7 @@ import dto.CustomerDTO;
 import service.CustomerService;
 
 @Controller
+@SessionAttributes("user")
 public class ConnexionAction {
 	
 	private static final String SUCCESS = "success";
@@ -40,12 +43,18 @@ public class ConnexionAction {
 			
 		} catch (final Exception e) {
 		}
+		MySessionAction.putUser(customer);
 		if (customer == null) {
 			return ERROR;
 		}
 		else{
 			return SUCCESS;
 		}
+	}
+	
+	public String clearConnexion(){
+		MySessionAction.clear();
+		return SUCCESS;
 	}
 	
 	public CustomerDTO getCustomer() {
@@ -65,5 +74,4 @@ public class ConnexionAction {
 	}
 	
 	
-
 }
