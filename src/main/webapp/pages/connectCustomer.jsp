@@ -15,13 +15,12 @@
 	
 	<h1>Connexion</h1>
 		
-		<s:form class="form form-control" action="connectAction">
-			<s:textfield name="customer.username" label="Pseudo" />
-			<s:password name="customer.mdp" label="Mot de passe" />
+		<s:form class="form" action="connectAction">
+			<s:textfield class="form-control" name="customer.username" label="Pseudo" />
+			<s:password class="form-control" name="customer.mdp" label="Mot de passe" />
 			<s:submit value="Valider" />
 		</s:form>
 		<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
-		
 		
 	</div>
 
