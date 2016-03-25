@@ -11,6 +11,11 @@
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
+
+<button class="btn btn-warning">
+Hi
+</button>
+
 <div class="container-fluid">
 	<div class=Description_site>
 		<div class="row">
