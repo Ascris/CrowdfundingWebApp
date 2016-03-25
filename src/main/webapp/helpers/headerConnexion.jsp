@@ -1,9 +1,9 @@
-<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
 
 <!--  No User Connected -->
 <div class="container-fluid">
 	<div class="row">
 		<div class="headerConnexion">
+			<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
 			<button onclick="window.location.href='/spring/pages/editCustomer.jsp'">Sign up</button>
 			<button onclick="window.location.href='/Crowdfunding/connexion'">Sign in</button>
 		</div>
@@ -15,6 +15,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="headerConnexion">
+			<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
 			<button onclick="window.location.href='/modifyProfile.jsp'">Modify Profile</button>
 			<button onclick="window.location.href='/'">Log out</button>
 		</div>
