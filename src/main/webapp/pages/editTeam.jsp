@@ -16,7 +16,7 @@
 	<s:form action="saveTeamAction">
 		<s:textfield name="team.name" label="Team" />
 		<s:textfield name="team.mail" label="Mail" />
-		<s:textfield name="team.adress" label="Adress" />
+		<s:textfield name="team.address" label="Address" />
 		<s:textarea name="team.description" label="Commentaire" cols="50" rows="5" cssStyle="resize: none;"/>
 		<s:submit value="Valider" />
 	</s:form>

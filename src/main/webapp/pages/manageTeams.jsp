@@ -18,14 +18,14 @@
 			<tr>
 				<th>Name</th>
 				<th>mail</th>
-				<th>Adress</th>
+				<th>Address</th>
 				<th>Description<th>
 			</tr>
 			<s:iterator value="projetList" var="projet" status="userStatus">
 				<tr>
 					<td>${team.name}</td>
 					<td>${team.mail}</td>
-					<td>${team.adress}</td>
+					<td>${team.address}</td>
 					<td>${team.description}</td>
 
 					<td><s:url id="deleteAction" action="deleteTeamAction">

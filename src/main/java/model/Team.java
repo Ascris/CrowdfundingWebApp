@@ -33,8 +33,8 @@ public class Team implements Serializable {
 	@Column(name = "description")
 	private String description;	
 	
-	@Column(name = "adress")
-	private String adress;	
+	@Column(name = "address")
+	private String address;	
 	
 	@Column(name = "mail")
 	private String mail;
@@ -50,7 +50,7 @@ public class Team implements Serializable {
 
 	public Team(final String name, final String adress, final String mail, final String description) {
 		this.name = name;
-		this.adress = adress;
+		this.address = adress;
 		this.mail = mail;
 		this.description = description;
 	}
@@ -61,7 +61,7 @@ public class Team implements Serializable {
 	}
 
 	public TeamDTO entity2Bean() {
-		return new TeamDTO(this.teamId, this.name, this.adress, this.mail,this.description);
+		return new TeamDTO(this.teamId, this.name, this.address, this.mail,this.description);
 	}
 
 	public Long getTeamId() {
@@ -89,11 +89,11 @@ public class Team implements Serializable {
 	}
 
 	public String getAdress() {
-		return adress;
+		return address;
 	}
 
 	public void setAdress(String adress) {
-		this.adress = adress;
+		this.address = adress;
 	}
 
 	public String getMail() {
