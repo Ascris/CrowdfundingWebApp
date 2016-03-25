@@ -13,7 +13,6 @@
 	<div class="container-fluid">
 
 	<h1>Inscription</h1>
-		<div class="form-group">
 		<s:form class="form-horizontal" action="saveCustomerAction" role="form">
 			<s:textfield class="form-control" name="customer.username" label="Pseudo" />
 			<s:password class="form-control" name="customer.mdp" label="Mot de passe" />
@@ -24,7 +23,6 @@
 			<s:submit value="Valider" />
 		</s:form>
 		<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
-		</div>
 		
 	</div>
 

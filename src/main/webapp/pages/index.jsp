@@ -17,7 +17,7 @@
 <h2>Become a crow fooder and join the awesome community of crow fooders</h2>
 
 <div style="margin-bottom:20px;" >
-	<p>Voir la liste des utilisateurs</p>
+	<p>See users liste</p>
 	<button onclick="window.location='/spring/listCustomerAction'">Fooders</button>
 </div>
 

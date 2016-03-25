@@ -13,16 +13,16 @@
 <!-- Contenu page -->
 
 <div class="container-fluid">
-	<p> Category : </p>
+	<p>Category : CATEGORIE</p>
 </div>
 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3">
-			<p> Remaining Amount : </p>
+			<p>Remaining Amount : MONTANT RESTANT</p>
 		</div>
 		<div class="col-md-9">
-			<p> BARRE DE PROGRESSION A METTRE ICI </p>
+			<p>BARRE DE PROGRESSION A METTRE ICI </p>
 		</div>
 	</div>
 	<div class="row">
@@ -30,7 +30,7 @@
 			<p> Timeline : </p>
 		</div>
 		<div class="col-md-9">
-			<p> Timeline HERE </p>
+			<p>TIMELINE</p>
 		</div>
 	</div>
 </div>
@@ -39,26 +39,27 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
-			<p>  NOM PROJET by TEAMNAME Donators : </p>
+			<p>NOM PROJET by TEAMNAME</p><%-- <%= request.getParameter("team.name") --%>
 		</div>
 	</div>
 </div>
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-8" id="left-part-project">
 			<div class="row">
-					<img src="../images/crow_seattle.jpg" alt="Crow on seattle on postal card" height="300"/>
+					<img src="../images/crow_seattle.jpg" alt="Crow on Seattle on postal card" height="300"/>
 			</div>
 			<div class="row"> 
-				<p> Note : </p>
+				<p>Rating :</p>
 				<p> ETOILES ICI </p>
 			</div>
 			<div class="row">
 				<textarea> Description of the project </textarea>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4" id="right-part-project">
+			<p>NB DONATEURS curators</p>
 			<div class="palliate">
 				<textarea> Palliate reached ! </textarea>
 			</div>

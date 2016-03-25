@@ -12,7 +12,7 @@
 <!-- Contenu page -->
 
 <div class="container-fluid">
-	<p class="erreurCo"> Erreur de connexion ! </p>
+	<p class="erreurCo">Connexion ! </p>
 </div>
 
 
