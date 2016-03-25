@@ -18,7 +18,7 @@
 
 		<action name="listCustomerAction" class="listCustomerAction"
 			method="listCustomer">
-			<result name="success">pages/customer.jsp</result>
+			<result name="success">pages/listCustomers.jsp</result>
 		</action>
 
 		<!-- Ici, on remarque que le resultat ne redirige pas sur une page mais 
