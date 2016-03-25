@@ -11,13 +11,19 @@
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
-<div class="container-fluid">
-	<form class="profile">
-		<p> Username : </p> <input type="text" name="customer.username"> <br>
-		<p> Password : </p> <input type="password" name="customer.password"> <br>
-	</form>
-</div>
-
+	<div class="container-fluid">
+	
+	<h1>Connexion</h1>
+		
+		<s:form class="form form-control" action="connectAction">
+			<s:textfield name="customer.username" label="Pseudo" />
+			<s:password name="customer.mdp" label="Mot de passe" />
+			<s:submit value="Valider" />
+		</s:form>
+		<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
+		
+		
+	</div>
 
 <!-- FIN_Contenu page -->
 <%@ include file="/helpers/footer.html" %>
