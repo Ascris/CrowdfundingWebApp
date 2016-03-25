@@ -17,8 +17,18 @@
 <h2>Become a crow fooder and join the awesome community of crow fooders</h2>
 
 <div style="margin-bottom:20px;" >
-	<p>See users liste</p>
+	<p>See users list</p>
 	<button onclick="window.location='/spring/listCustomerAction'">Fooders</button>
+</div>
+
+<div style="margin-bottom:20px;" >
+	<p>See projects list</p>
+	<button onclick="window.location='/spring/listProjetAction'">Projets</button>
+</div>
+
+<div style="margin-bottom:20px;" >
+	<p>See teams list</p>
+	<button onclick="window.location='/spring/listTeamAction'">Projets</button>
 </div>
 
 
