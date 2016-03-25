@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="headerConnexion">
 			<button onclick="window.location.href='/spring/pages/editCustomer.jsp'">Sign up</button>
-			<button onclick="window.location.href='/spring/pages/About.jsp'">Sign in</button>
+			<button onclick="window.location.href='/spring/pages/connectCustomer.jsp'">Sign in</button>
 		</div>
 	</div>
 </div>

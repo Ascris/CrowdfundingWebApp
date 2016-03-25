@@ -83,6 +83,14 @@ public class CustomerServiceImpl implements CustomerService {
 		}
 		return null;
 	}
+	
+	public CustomerDTO getCustomerByUsernameAndMdp(final String mdp, final String username) {
+		final Customer customer = customerDAO.findByUsernameAndMdp(mdp, username);
+		if (customer != null) {
+			return customer.entity2Bean();
+		}
+		return null;
+	}
 
 	public void saveCustomer(final CustomerDTO customer) {
 		if (customer != null) {
