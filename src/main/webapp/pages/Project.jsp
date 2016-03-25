@@ -1,4 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -12,16 +13,16 @@
 <!-- Contenu page -->
 
 <div class="container-fluid">
-	<p> Category : </p>
+	<p>Category : CATEGORIE</p>
 </div>
 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3">
-			<p> Remaining Amount : </p>
+			<p>Remaining Amount : MONTANT RESTANT</p>
 		</div>
 		<div class="col-md-9">
-			<p> BARRE DE PROGRESSION A METTRE ICI </p>
+			<p>BARRE DE PROGRESSION A METTRE ICI </p>
 		</div>
 	</div>
 	<div class="row">
@@ -29,44 +30,36 @@
 			<p> Timeline : </p>
 		</div>
 		<div class="col-md-9">
-			<p> Timeline HERE </p>
+			<p>TIMELINE</p>
 		</div>
 	</div>
 </div>
 
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-3">
-			<p> Nom projet </p>
-		</div>
-		<div class="col-md-1">
-			<p> by </p>
-		</div>
-		<div class="col-md-3">
-			<p> TeamName </p>
-		</div>
-		<div class="col-md-5">
-			<p> Donators : </p>
-		</div>
-	</div>
-</div>
 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
+			<p>NOM PROJET by TEAMNAME</p><%-- <%= request.getParameter("team.name") --%>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8" id="left-part-project">
 			<div class="row">
-					<a href="www.github.com"> PROJECT IMAGE </a>
+					<img src="../images/crow_seattle.jpg" alt="Crow on Seattle on postal card" height="300"/>
 			</div>
 			<div class="row"> 
-				<p> Note : </p>
-				<p> Etoiles a placer ici </p>
+				<p>Rating :</p>
+				<p> ETOILES ICI </p>
 			</div>
 			<div class="row">
 				<textarea> Description of the project </textarea>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4" id="right-part-project">
+			<p>NB DONATEURS curators</p>
 			<div class="palliate">
 				<textarea> Palliate reached ! </textarea>
 			</div>

@@ -21,3 +21,15 @@ p.erreurCo {
 	font-size: 50px;
 	color: yellow;
 }
+
+.footer a:visited {
+	color: lightblue;
+}
+
+.footer a:hover {
+	color: white;
+}
+
+.palliate{
+	height : 500 px;
+}

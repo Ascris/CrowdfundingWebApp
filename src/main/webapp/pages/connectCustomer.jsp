@@ -14,14 +14,13 @@
 	<div class="container-fluid">
 	
 	<h1>Connexion</h1>
-		
-		<s:form class="form" action="connexionAction">
+		<s:form role="form" action="connexionAction">
 			<s:textfield class="form-control" name="customer.username" label="Pseudo" />
 			<s:password class="form-control" name="customer.mdp" label="Mot de passe" />
 			<s:submit value="Valider" />
 		</s:form>
-		<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
-		
+		<button onclick="window.location.href='/spring/pages/index.jsp'">Cancel</button>
+
 	</div>
 
 <!-- FIN_Contenu page -->

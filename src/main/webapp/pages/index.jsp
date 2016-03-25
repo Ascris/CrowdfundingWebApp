@@ -11,13 +11,13 @@
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
-<h1>WELCOME on Crow Fooder !<x/h1>
+<h1>WELCOME on Crow Fooder !</h1>
 
 
 <h2>Become a crow fooder and join the awesome community of crow fooders</h2>
 
 <div style="margin-bottom:20px;" >
-	<p>Voir la liste des utilisateurs</p>
+	<p>See users liste</p>
 	<button onclick="window.location='/spring/listCustomerAction'">Fooders</button>
 </div>
 
