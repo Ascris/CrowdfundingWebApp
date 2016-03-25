@@ -3,6 +3,7 @@
 
 <!-- Bootstrap required head -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Bootstrap required head-->
 

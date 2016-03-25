@@ -1,3 +1,5 @@
+<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
+
 <!--  No User Connected -->
 <div class="container-fluid">
 	<div class="row">
