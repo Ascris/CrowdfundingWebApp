@@ -22,7 +22,7 @@
 			<s:textarea class="form-control" name="customer.address" label="Commentaire" cols="50" rows="5" cssStyle="resize: none;"/>
 			<s:submit value="Valider" />
 		</s:form>
-		<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
+		<button onclick="window.location.href='/spring/pages/index.jsp'">Cancel</button>
 		
 	</div>
 

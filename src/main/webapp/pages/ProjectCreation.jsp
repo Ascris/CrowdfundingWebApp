@@ -11,6 +11,15 @@
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
+	<div class="container-fluid">
+
+	<h1>Project creation</h1>
+		<s:form class="form-horizontal" action="" role="form">
+			<s:submit value="Valider" />
+		</s:form>
+		<button onclick="window.location.href='/spring/pages/index.jsp'">Cancel</button>
+		
+	</div>
 
 <!-- FIN_Contenu page -->
 <%@ include file="/helpers/footer.html" %>

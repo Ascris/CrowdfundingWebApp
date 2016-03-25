@@ -46,13 +46,13 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-8" id="left-part-project">
+		<div class="col-md-7" id="left-part-project">
 			<div class="row">
 					<img src="../images/crow_seattle.jpg" alt="Crow on Seattle on postal card" height="300"/>
 			</div>
 			<div class="row"> 
 				<p>Rating :</p>
-				<p> ETOILES ICI </p>
+				<p>ETOILES ICI</p>
 			</div>
 			<div class="row">
 				<textarea> Description of the project </textarea>
