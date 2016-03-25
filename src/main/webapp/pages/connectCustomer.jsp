@@ -15,7 +15,7 @@
 	
 	<h1>Connexion</h1>
 		
-		<s:form class="form" action="connectAction">
+		<s:form class="form" action="connexionAction">
 			<s:textfield class="form-control" name="customer.username" label="Pseudo" />
 			<s:password class="form-control" name="customer.mdp" label="Mot de passe" />
 			<s:submit value="Valider" />
