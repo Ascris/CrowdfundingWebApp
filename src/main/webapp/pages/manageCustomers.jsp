@@ -4,7 +4,7 @@
 
    <!-- TODO ajouter des paramètres ? -->
 <jsp:include page="/helpers/head_balise.jsp" >
-   <jsp:param name="title" value="Customer"/>
+   <jsp:param name="title" value="Customers"/>
 </jsp:include>
 
 <body>

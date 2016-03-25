@@ -1,0 +1,48 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/tx
+      http://www.springframework.org/schema/tx/spring-tx.xsd
+      http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd      
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Database Configuration -->
+	<import resource="config/spring/DataSource.xml" />
+	<import resource="config/spring/HibernateSessionFactory.xml" />
+
+	<!-- Afin de gérer la configuration de Spring, il existe deux méthodes : 
+		utiliser du xml ou des annotations. Ici, on utilisera majoritairement les 
+		annotations, qui se trouveront dans les différentes classes. Néanmoins, un 
+		fichier de configuration .xml est tout de même nécessaire afin d'indiquer 
+		à Spring où et quoi chercher. Cette approche permet de placer la configuration 
+		au sein de la classe concernée. On sais donc en voyant une classe si elle 
+		est un bean et si c'est le cas s'il s'agit d'un controlleur, d'un service 
+		ou d'un DAO. La configuration complête en xml permet quant à elle de centraliser 
+		toute la configuration en un fichier .xml -->
+
+	<!-- Cette ligne permet d'indiquer à Spring la liste des packages à scanner 
+		de manière à retrouver les différents beans annotés avec @Controller, @Service, 
+		@Repository. En xml, on aurait décrit un à un les beans grâce à une balise 
+		<bean id="nomBean" class="package.nomBean"/> -->
+	<context:component-scan base-package="dao, service, action" />
+
+	<!-- Ce bean permet d'informer Spring que les dépendances seront gérées 
+		grâce à l'annotation @Autowired. En xml, on aurait du, pour chaque dépendance 
+		que Spring doit injecter, ajouter dans le bean en question une balise <property 
+		name="nomDependance" class="nomBean"/> -->
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+	<!-- Le tag tx:annotation-driven permet de laisser Spring gérer les transactions 
+		grâce au bean transactionManager déclaré ci-après lorsqu'il rencontre @Transactional -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven proxy-target-class="true"/>
+</beans>
