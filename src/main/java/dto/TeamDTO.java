@@ -23,7 +23,7 @@ public class TeamDTO implements Serializable {
 	public TeamDTO() {
 	}
 
-	public TeamDTO(final Long teamId, final String name, final String address, final String description, final String mail) {
+	public TeamDTO(final Long teamId, final String address, final String description, final String mail, final String name) {
 		this.teamId = teamId;
 		this.name = name;
 		this.address = address;
@@ -32,7 +32,7 @@ public class TeamDTO implements Serializable {
 	}
 
 	public Team DTO2Entity() {
-		return new Team(this.teamId, this.name, this.address, this.description, this.mail);
+		return new Team(this.teamId, this.address, this.description, this.mail, this.name);
 	}
 
 	public Long getTeamId() {

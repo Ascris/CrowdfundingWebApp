@@ -48,20 +48,20 @@ public class Team implements Serializable {
 	
 	public Team() {}
 
-	public Team(final String name, final String adress, final String mail, final String description) {
+	public Team(final String address, final String description, final String mail, final String name) {
 		this.name = name;
-		this.address = adress;
+		this.address = address;
 		this.mail = mail;
 		this.description = description;
 	}
 
-	public Team(final Long teamId,final String name, final String adress, final String mail, final String description) {
-		this(name, adress, mail, description);
+	public Team(final Long teamId,final String address, final String description, final String mail, final String name) {
+		this(name, address, mail, description);
 		this.teamId = teamId;
 	}
 
 	public TeamDTO entity2Bean() {
-		return new TeamDTO(this.teamId, this.name, this.address, this.mail,this.description);
+		return new TeamDTO(this.teamId, this.address, this.description, this.mail,this.name);
 	}
 
 	public Long getTeamId() {
@@ -88,12 +88,12 @@ public class Team implements Serializable {
 		this.description = description;
 	}
 
-	public String getAdress() {
+	public String getAddress() {
 		return address;
 	}
 
-	public void setAdress(String adress) {
-		this.address = adress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public String getMail() {
