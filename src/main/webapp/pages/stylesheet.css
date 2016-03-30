@@ -1,6 +1,5 @@
 body {
 	background-image:url(../images/backgroundcrow.jpg);
-	align: center;
 }
 
 button {
@@ -35,6 +34,6 @@ p.erreurCo {
 	height : 500px;
 }
 
-div {
+div.headerConnexion {
 	text-align: center;
 }
