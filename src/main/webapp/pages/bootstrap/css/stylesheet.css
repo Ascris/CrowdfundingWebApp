@@ -1,5 +1,6 @@
 body {
-	background-image:url("../images/backgroundcrow.jpg");
+	background-image:url("/spring/images/backgroundcrow.jpg");
+	background-size: cover;
 }
 
 button {
@@ -40,6 +41,7 @@ div.headerConnexion {
 }
 
 div.bandeau_intro {
+	text-align: center;
 	background-color: red;
 	border: 2px solid;
 }
@@ -56,7 +58,10 @@ div.contenu_centre {
 	text-align: center;
 }
 
-div.footer_centre {
+div.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	border: 2px solid;
 	text-align: center;
 }
