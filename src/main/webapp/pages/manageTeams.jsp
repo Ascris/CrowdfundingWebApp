@@ -8,6 +8,7 @@
 <body>
 
 <jsp:include page="/helpers/headerConnexion.jsp"/>
+
 <!-- Contenu page -->
 
 	<h1>Les Teams</h1>

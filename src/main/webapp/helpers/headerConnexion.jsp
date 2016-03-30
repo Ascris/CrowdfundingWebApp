@@ -28,9 +28,9 @@
 			<div style="float: right;">
 				<button onclick="window.location.href='/spring/editCustomerAction.action?customerId=#session.customerConnected.getCustomerId()'">Modify Profile</button>
 				<button onclick="window.location.href='/spring/pages/clearConnexion'">Log out</button>
-				<p>Bienvenue <s:property value="#session.customerConnected.getUsername()"/></p>
-				<button onclick="window.location.href='/spring/listProjetAction'">Voir les teams</button>
-				<button onclick="window.location.href='/spring/listProjetAction'">Voir les projets</button>
+				<p>Welcome<s:property value="#session.customerConnected.getUsername()"/></p>
+				<button onclick="window.location.href='/spring/listProjetAction'">See Teams</button>
+				<button onclick="window.location.href='/spring/listProjetAction'">See Projects</button>
 				</div>
 		</div>
 	</div>
