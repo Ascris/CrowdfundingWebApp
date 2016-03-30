@@ -36,8 +36,10 @@
 							</s:url>
 							<s:a href="%{deleteAction}">delete</s:a></td>
 							
-						<td><s:url id="myeditAction" action="editProjetAction"/>
-						 <s:a href="%{myeditAction}">edit</s:a></td>
+						<td><s:url id="editAction" action="editProjetAction">
+								<s:param name="projetId" value="projetId" />
+							</s:url>
+						 <s:a href="%{editAction}">edit</s:a></td>
 					</s:if>
 				</tr>
 			</s:iterator>

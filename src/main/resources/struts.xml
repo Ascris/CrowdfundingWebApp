@@ -77,10 +77,11 @@
 		
 		<action name="editProjetAction" class="editProjetAction" method="editProjet">
 			<result name="success">pages/editProjet.jsp</result>
+			<result name="input">pages/editProjet.jsp</result>
 		</action>
 		
 		<action name="saveProjetAction" class="editProjetAction" method="saveProjet">
-				<result name="success" type="redirect">listProjetAction</result>
+			<result name="success" type="redirect">listProjetAction</result>
 		</action>
 		
 		
@@ -100,6 +101,7 @@
 		
 		<action name="saveTeamAction" class="editTeamAction" method="saveTeam">
 				<result name="success" type="redirect">listTeamAction</result>
+				<result name="input" type="redirect">listTeamAction</result>
 		</action>
 
 	</package>
