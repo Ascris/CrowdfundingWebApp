@@ -65,3 +65,9 @@ div.footer {
 	border: 2px solid;
 	text-align: center;
 }
+
+table {
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 5px 8px;
+}
