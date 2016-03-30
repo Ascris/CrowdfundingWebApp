@@ -9,7 +9,7 @@
 
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
-<body>
+
 	<h1>Les Teams</h1>
 
 	<!-- implicidement, customerList fait en fait appel à getCustomerList() -->
@@ -40,7 +40,6 @@
 			</s:iterator>
 		</table>
 	</s:if>
-	<button onclick="window.location.href='/spring/pages/index.jsp'">Accueil</button>
 
 <!-- FIN_Contenu page -->
 <%@ include file="/helpers/footer.html" %>

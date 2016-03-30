@@ -47,7 +47,7 @@ public class EditTeamAction extends ActionSupport {
 	}
 
 	public String saveTeam() throws Exception {
-	
+
 		teamService.saveTeam(team);
 
 		return SUCCESS;

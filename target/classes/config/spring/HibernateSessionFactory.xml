@@ -13,5 +13,13 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 		<!-- Cette balise indique à Spring les packages à scanner afin de mapper 
 			les classes annoté @Entity avec les tables correspondantes -->
 		<property name="packagesToScan" value="model" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.show_sql">true</prop>
+            	<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
 	</bean>
 </beans>
