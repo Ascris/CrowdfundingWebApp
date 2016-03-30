@@ -69,7 +69,6 @@
 		<action name="deleteProjetAction" class="listProjetAction" method="deleteProjet">
 			<result name="success" type="redirect">listProjetAction</result>
 		</action>
-		
 		<action name="editProjetAction" class="editProjetAction" method="editProjet">
 			<result name="success">pages/editProjet.jsp</result>
 		</action>
