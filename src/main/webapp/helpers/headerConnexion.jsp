@@ -18,9 +18,11 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="headerConnexion">
-			<button onclick="window.location.href='/modifyProfile.jsp'">Modify Profile</button>
+			<button onclick="window.location.href='/spring/editCustomerAction.action?customerId=#session.customerConnected.getCustomerId()'">Modify Profile</button>
 			<button onclick="window.location.href='/spring/pages/clearConnexion'">Log out</button>
 			<p>Bienvenue <s:property value="#session.customerConnected.getUsername()"/></p>
+			<button onclick="window.location.href='/spring/listProjetAction'">Voir les teams</button>
+			<button onclick="window.location.href='/spring/listProjetAction'">Voir les projets</button>
 		</div>
 	</div>
 </div>

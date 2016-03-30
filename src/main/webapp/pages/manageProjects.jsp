@@ -29,15 +29,20 @@
 					<td>${projet.somme_demande}</td>
 					<td>${projet.description}</td>
 					<td>${projet.date_debut}</td>
-
-					<td><s:url id="deleteAction" action="deleteProjetAction">
-							<s:param name="projetId" value="projetId" />
-						</s:url>
-						<s:a href="%{deleteAction}">delete</s:a></td>
-
-					<td><s:url id="editAction" action="editProjetAction">
-							<s:param name="projetId" value="projetId" />
-						</s:url> <s:a href="%{editAction}">edit</s:a></td>
+					<td><s:url id="voirAction" action="voirProjetAction">
+								<s:param name="projetId" value="projetId" />
+							</s:url>
+							<s:a href="%{voirAction}">delete</s:a></td>
+					<s:if test="#session.customerConnected != null">
+						<td><s:url id="deleteAction" action="deleteProjetAction">
+								<s:param name="projetId" value="projetId" />
+							</s:url>
+							<s:a href="%{deleteAction}">delete</s:a></td>
+	
+						<td><s:url id="editAction" action="editProjetAction">
+								<s:param name="projetId" value="projetId" />
+							</s:url> <s:a href="%{editAction}">edit</s:a></td>
+					</s:if>
 				</tr>
 			</s:iterator>
 		</table>

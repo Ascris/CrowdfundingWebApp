@@ -47,10 +47,14 @@ public class EditProjetAction extends ActionSupport {
 		return SUCCESS;
 	}
 
+	@SuppressWarnings("deprecation")
 	public String saveProjet() throws Exception {
 		if (projet.getProjetId() == null) {
 
 			projet.setDate_debut(new Date());
+			Date end_date=new Date();
+			end_date.setMonth(end_date.getMonth()+1);
+			projet.setDate_fin(end_date);
 		}
 		
 		projetService.saveProjet(projet);
