@@ -13,6 +13,8 @@
 	<jsp:include page="/helpers/headerConnexion.jsp" />
 	<!-- Contenu page -->
 
+<%-- <%=request.getParameter("project")%> --%>
+
 	<div class="container-fluid">
 		<p>Category : CATEGORIE</p>
 	</div>
