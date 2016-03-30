@@ -31,6 +31,7 @@
 		<action name="editCustomerAction" class="editCustomerAction"
 			method="editCustomer">
 			<result name="success">pages/editCustomer.jsp</result>
+			<result name="input">pages/editCustomer.jsp</result>
 		</action>
 
 		<action name="saveCustomerAction" class="editCustomerAction"
@@ -62,6 +63,10 @@
 		
 		<!-- Projet Actions -->
 		
+		<action name="viewListProjetAction" class="listProjetAction" method="listProjet">
+			<result name="success">pages/viewProjects.jsp</result>
+		</action>
+		
 		<action name="listProjetAction" class="listProjetAction" method="listProjet">
 			<result name="success">pages/manageProjects.jsp</result>
 		</action>
@@ -69,6 +74,7 @@
 		<action name="deleteProjetAction" class="listProjetAction" method="deleteProjet">
 			<result name="success" type="redirect">listProjetAction</result>
 		</action>
+		
 		<action name="editProjetAction" class="editProjetAction" method="editProjet">
 			<result name="success">pages/editProjet.jsp</result>
 		</action>
@@ -76,6 +82,7 @@
 		<action name="saveProjetAction" class="editProjetAction" method="saveProjet">
 				<result name="success" type="redirect">listProjetAction</result>
 		</action>
+		
 		
 		<!-- Team Actions -->
 		

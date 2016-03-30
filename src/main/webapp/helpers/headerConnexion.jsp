@@ -26,11 +26,11 @@
 				<button onclick="window.location.href='/spring/pages/index.jsp'">HOME</button>
 			</div>
 			<div style="float: right;">
-				<button onclick="window.location.href='/spring/editCustomerAction.action?customerId=#session.customerConnected.getCustomerId()'">Modify Profile</button>
 				<button onclick="window.location.href='/spring/pages/clearConnexion'">Log out</button>
+				<button onclick="window.location.href='/spring/editCustomerAction.action?customerId=#session.customerConnected.getCustomerId()'">Modify Profile</button>
+				<button onclick="window.location.href='/spring/listTeamAction'">Voir les teams</button>
+				<button onclick="window.location.href='/spring/viewListProjetAction'">Voir les projets</button>
 				<p>Bienvenue <s:property value="#session.customerConnected.getUsername()"/></p>
-				<button onclick="window.location.href='/spring/listProjetAction'">Voir les teams</button>
-				<button onclick="window.location.href='/spring/listProjetAction'">Voir les projets</button>
 				</div>
 		</div>
 	</div>

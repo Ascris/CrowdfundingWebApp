@@ -1,4 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
+<s:set name="tableau">0</s:set>
 <html>
 
    <!-- TODO ajouter des paramètres ? -->
@@ -16,30 +17,37 @@
 	<!-- implicidement, customerList fait en fait appel à getCustomerList() -->
 	<s:if test="projetList != null && projetList.size() > 0">
 		<table>
-			<tr>
-				<th>Name</th>
-				<th>Somme Demande</th>
-				<th>Description</th>
-				<th>Date de création<th>
-			</tr>
 			<s:iterator value="projetList" var="projet" status="userStatus">
+				<s:if test="%{#tableau==0}">
 				<tr>
-					<td>${projet.name}</td>
-					<td>${projet.somme_demande}</td>
 					<td>${projet.description}</td>
-					<td>${projet.date_debut}</td>
-					<td>
 					<s:if test="#session.customerConnected != null">
+	
 						<td>
-							<s:url id="deleteAction" action="deleteProjetAction">
-								<s:param name="projetId" value="projet.getProjectId()" />
-							</s:url>
-							<s:a href="%{deleteAction}">delete</s:a></td>
-							
-						<td><s:url id="myeditAction" action="editProjetAction"/>
-						 <s:a href="%{myeditAction}">edit</s:a></td>
+							<s:url id="editAction" action="editProjetAction">
+								<s:param name="projetId" >${projet.projetId}</s:param>
+							</s:url> <s:a href="%{editAction}">edit</s:a>
+						</td>
+					</s:if>
+				</s:if>
+				<s:if test="%{#tableau==1}">
+					<td>${projet.description}</td>
+					<s:if test="#session.customerConnected != null">
+	
+						<td>
+							<s:url id="myeditAction" action="editProjetAction"/> <s:a href="%{editAction}">edit</s:a>
+						</td>
 					</s:if>
 				</tr>
+				</s:if>
+				
+				<s:if test="%{#tableau==1}">
+					<s:set name="tableau">0</s:set>
+				</s:if>
+				<s:if test="%{#tableau==0}">
+					<s:set name="tableau">1</s:set>
+				</s:if>
+			
 			</s:iterator>
 		</table>
 	</s:if>
