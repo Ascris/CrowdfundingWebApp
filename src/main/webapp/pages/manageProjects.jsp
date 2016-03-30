@@ -32,7 +32,7 @@
 					<s:if test="#session.customerConnected != null">
 						<td>
 							<s:url id="deleteAction" action="deleteProjetAction">
-								<s:param name="projetId" value="projet.getProjectId()" />
+								<s:param name="projetId" value="projetId" />
 							</s:url>
 							<s:a href="%{deleteAction}">delete</s:a></td>
 							
