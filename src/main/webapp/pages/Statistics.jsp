@@ -11,15 +11,17 @@
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
-<div class="container-fluid">
-	<div class="row">
-		<p> Statistics of Crow Fooder </p> <br>
-	</div>
-	<div class="row">
-		<p> Number of projects = </p> <br>
-	</div>
-	<div class="row">
-		<p> Total dollars collected </p> <br>
+<div class="contenu_centre">
+	<div class="container-fluid">
+		<div class="row">
+			<p> Statistics of Crow Fooder </p> <br>
+		</div>
+		<div class="row">
+			<p> Number of projects = </p> <br>
+		</div>
+		<div class="row">
+			<p> Total dollars collected </p> <br>
+		</div>
 	</div>
 </div>
 

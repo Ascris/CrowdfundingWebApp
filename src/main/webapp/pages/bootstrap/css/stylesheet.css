@@ -1,5 +1,5 @@
 body {
-	background-image:url(../images/backgroundcrow.jpg);
+	background-image:url("../images/backgroundcrow.jpg");
 }
 
 button {
@@ -35,5 +35,28 @@ p.erreurCo {
 }
 
 div.headerConnexion {
+  display:inline;
+  overflow: auto;
+}
+
+div.bandeau_intro {
+	background-color: red;
+	border: 2px solid;
+}
+
+div.home_left {
+	text-align: left;
+}
+
+div.options_connexion {
+	text-align: right;
+}
+
+div.contenu_centre {
+	text-align: center;
+}
+
+div.footer_centre {
+	border: 2px solid;
 	text-align: center;
 }
