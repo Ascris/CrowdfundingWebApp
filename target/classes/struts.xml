@@ -77,12 +77,10 @@
 		
 		<action name="editProjetAction" class="editProjetAction" method="editProjet">
 			<result name="success">pages/editProject.jsp</result>
-			<result name="input">pages/editProject.jsp</result>
 		</action>
 		
 		<action name="saveProjetAction" class="editProjetAction" method="saveProjet">
 			<result name="success" type="redirect">listProjetAction</result>
-			<result name="input" type="redirect">listProjetAction</result>
 		</action>
 		
 		
