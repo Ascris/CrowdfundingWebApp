@@ -21,24 +21,19 @@
 				<s:if test="%{#tableau==0}">
 				<tr>
 					<td>${projet.description}</td>
-					<s:if test="#session.customerConnected != null">
-	
 						<td>
 							<s:url id="viewAction" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{viewAction}">Voir</s:a>
+							</s:url> <s:a href="%{viewAction}">See more</s:a>
 						</td>
-					</s:if>
 				</s:if>
 				<s:if test="%{#tableau==1}">
 					<td>${projet.description}</td>
-					<s:if test="#session.customerConnected != null">
 						<td>
 							<s:url id="viewAction" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{viewAction}">Voir</s:a>
+							</s:url> <s:a href="%{viewAction}">See more</s:a>
 						</td>
-					</s:if>
 				</tr>
 				</s:if>
 				

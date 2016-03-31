@@ -14,13 +14,13 @@
 <div class="contenu_centre">
 	<div class="container-fluid">
 		<div class="row">
-			<p> Statistics of Crow Fooder </p> <br>
+			<p>Statistics of Crow Fooder</p> <br>
 		</div>
 		<div class="row">
-			<p> Number of projects = </p> <br>
+			<p>Number of projects : 4</p> <br>
 		</div>
 		<div class="row">
-			<p> Total dollars collected </p> <br>
+			<p>Total dollars collected</p> <br>
 		</div>
 	</div>
 </div>

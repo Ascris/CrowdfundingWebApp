@@ -30,17 +30,19 @@ public class ProjetDTO implements Serializable {
 	public ProjetDTO() {}
 
 	public ProjetDTO(final Long projetId, final String name, final Float somme_demande,
-			final Date date_debut, final Date date_fin, final String description) {
+			final Date date_debut, final Date date_fin, final String description, final String category) {
 		this.projetId = projetId;
 		this.name = name;
 		this.somme_demande = somme_demande;
 		this.date_debut = date_debut;
 		this.date_fin = date_fin;
 		this.description = description;
+		
+		this.category = category;
 	}
 
 	public Projet DTO2Entity() {
-		return new Projet(this.projetId, this.name, this.somme_demande, this.date_debut, this.date_fin, this.description);
+		return new Projet(this.projetId, this.name, this.somme_demande, this.date_debut, this.date_fin, this.description, this.category);
 	}
 
 	public Long getProjetId() {

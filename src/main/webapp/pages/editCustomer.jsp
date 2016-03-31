@@ -15,12 +15,12 @@
 	<h1>Inscription</h1>
 		<s:form class="form-horizontal" action="saveCustomerAction" role="form">
 			<s:textfield class="form-control" name="customer.username" label="Pseudo" />
-			<s:password class="form-control" name="customer.mdp" label="Mot de passe" />
-			<s:textfield class="form-control" name="customer.prenom" label="Prenom" />
-			<s:textfield class="form-control" name="customer.name" label="Nom" />
-			<s:textfield class="form-control" name="customer.mail" label="Mail" />
-			<s:textarea class="form-control" name="customer.address" label="Commentaire" cols="50" rows="5" cssStyle="resize: none;"/>
-			<s:submit value="Valider" />
+			<s:password class="form-control" name="customer.mdp" label="Password" />
+			<s:textfield class="form-control" name="customer.prenom" label="Surname" />
+			<s:textfield class="form-control" name="customer.name" label="Name" />
+			<s:textfield class="form-control" name="customer.mail" label="E-mail" />
+			<s:textarea class="form-control" name="customer.address" label="Commentary" cols="50" rows="5" cssStyle="resize: none;"/>
+			<s:submit value="Validate" />
 		</s:form>
 		<button onclick="window.location.href='/spring/pages/index.jsp'">Cancel</button>
 		

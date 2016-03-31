@@ -5,7 +5,7 @@
 <html>
 
 <jsp:include page="/helpers/head_balise.jsp">
-	<jsp:param name="title" value="Project" />
+	<jsp:param name="title" value='${projet.name}' />
 </jsp:include>
 
 <body>
@@ -45,7 +45,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<p>${projet.name}by plop</p>
+				<p>${projet.name}by TEAMNAME</p>
 				<%-- <%= request.getParameter("team.name") --%>
 			</div>
 		</div>

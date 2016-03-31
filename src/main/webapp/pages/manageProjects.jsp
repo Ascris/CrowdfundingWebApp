@@ -18,14 +18,17 @@
 		<table>
 			<tr>
 				<th>Name</th>
-				<th>Somme Demande</th>
+				<th>Amount</th>
+				<th>Category</th>
 				<th>Description</th>
-				<th>Date de création<th>
+				<th>Begin date<th>
+				<th>End date<th>
 			</tr>
 			<s:iterator value="projetList" var="projet" status="userStatus">
 				<tr>
 					<td>${projet.name}</td>
 					<td>${projet.somme_demande}</td>
+					<td>${projet.category}</td>
 					<td>${projet.description}</td>
 					<td>${projet.date_debut}</td>
 					<td>${projet.date_fin}</td>
