@@ -63,6 +63,10 @@
 		
 		<!-- Projet Actions -->
 		
+		<action name="viewProjetAction" class="editProjetAction" method="editProjet">
+			<result name="success">pages/Project.jsp</result>
+		</action>
+		
 		<action name="viewListProjetAction" class="listProjetAction" method="listProjet">
 			<result name="success">pages/viewProjects.jsp</result>
 		</action>
@@ -77,12 +81,10 @@
 		
 		<action name="editProjetAction" class="editProjetAction" method="editProjet">
 			<result name="success">pages/editProjet.jsp</result>
-			<result name="input">pages/editProjet.jsp</result>
 		</action>
 		
 		<action name="saveProjetAction" class="editProjetAction" method="saveProjet">
 			<result name="success" type="redirect">listProjetAction</result>
-			<result name="input" type="redirect">listProjetAction</result>
 		</action>
 		
 		
