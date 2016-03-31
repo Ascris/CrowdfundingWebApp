@@ -21,23 +21,13 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3">
-				<p>Remaining Amount : MONTANT RESTANT</p>
+			<div class="col-md-4">
+				<p>Remaining Amount</p> <div class="remaining_amount" data-length="60"></div>
 			</div>
-			<div class="col-md-9">
-				<p>BARRE DE PROGRESSION A METTRE ICI</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<p>Timeline :</p>
-			</div>
-			<div class="col-md-9">
-				<p class="timeline timeline-begin">Beginned :
-					${projet.date_debut}</p>
-				<p class="timeline timeline-middle">TIMELINE</p>
-				<p class="timeline timeline-end">Ends in : ${projet.date_fin}
-					TIMELINE</p>
+			<div class="col-md-8">
+				<p> Begin : ${projet.date_debut} </p>
+				<div class="timeline" data-length="90"></div>
+				<p> End : ${projet.date_fin} </p>
 			</div>
 		</div>
 	</div>
@@ -60,7 +50,13 @@
 				</div>
 				<div class="row">
 					<p>Rating :</p>
-					<p>ETOILES ICI</p>
+					<div class="rating">
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+					</div>
 				</div>
 				<div class="row">
 					<textarea>${projet.description}</textarea>

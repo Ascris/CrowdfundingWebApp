@@ -81,3 +81,63 @@ tr.viewProjectONLY {
   width: 100%;
 }
 
+.rating > span:hover:before {
+	content: "\2605";
+	position: absolute;
+}
+
+.remaining_amount {
+	width: 300px;
+	background: black;
+	border: 2px solid grey;
+	position: relative;
+	height: 10px;
+}
+
+.remaining_amount:after {
+	content: "";
+	position: absolute;
+	background: green;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.remaining_amount[data-length="10"]:after { width: 10% }
+.remaining_amount[data-length="20"]:after { width: 20% }
+.remaining_amount[data-length="30"]:after { width: 30% }
+.remaining_amount[data-length="40"]:after { width: 40% }
+.remaining_amount[data-length="50"]:after { width: 50% }
+.remaining_amount[data-length="60"]:after { width: 60% }
+.remaining_amount[data-length="70"]:after { width: 70% }
+.remaining_amount[data-length="80"]:after { width: 80% }
+.remaining_amount[data-length="90"]:after { width: 90% }
+.remaining_amount[data-length="100"]:after { width: 100% }
+
+.timeline {
+	width: 300px;
+	background: black;
+	border: 2px solid grey;
+	position: relative;
+	height: 10px;
+}
+
+.timeline:after {
+	content: "";
+	position: absolute;
+	background: orange;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.timeline[data-length="10"]:after { width: 10% }
+.timeline[data-length="20"]:after { width: 20% }
+.timeline[data-length="30"]:after { width: 30% }
+.timeline[data-length="40"]:after { width: 40% }
+.timeline[data-length="50"]:after { width: 50% }
+.timeline[data-length="60"]:after { width: 60% }
+.timeline[data-length="70"]:after { width: 70% }
+.timeline[data-length="80"]:after { width: 80% }
+.timeline[data-length="90"]:after { width: 90% }
+.timeline[data-length="100"]:after { width: 100% }
