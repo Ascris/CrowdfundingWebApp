@@ -16,7 +16,7 @@
 
 	<!-- implicidement, customerList fait en fait appel à getCustomerList() -->
 	<s:if test="projetList != null && projetList.size() > 0">
-		<table>
+		<table class="viewProjectONLY">
 			<s:iterator value="projetList" var="projet" status="userStatus">
 				<s:if test="%{#tableau==0}">
 				<tr>
