@@ -36,7 +36,7 @@
 				<p class="timeline timeline-begin">Beginned :
 					${projet.date_debut}</p>
 				<p class="timeline timeline-middle">TIMELINE</p>
-				<p class="timeline timeline-end">Ends in : ${projet.date_debut}
+				<p class="timeline timeline-end">Ends in : ${projet.date_fin}
 					TIMELINE</p>
 			</div>
 		</div>
@@ -45,7 +45,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<p>${projet.name}by ${projet.teamName}</p>
+				<p>${projet.name}by plop</p>
 				<%-- <%= request.getParameter("team.name") --%>
 			</div>
 		</div>
