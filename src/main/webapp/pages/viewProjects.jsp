@@ -12,7 +12,7 @@
 <jsp:include page="/helpers/headerConnexion.jsp"/>
 <!-- Contenu page -->
 
-	<h1>Les Projets</h1>
+	<h1>Liste des projets</h1>
 
 	<!-- implicidement, customerList fait en fait appel à getCustomerList() -->
 	<s:if test="projetList != null && projetList.size() > 0">
