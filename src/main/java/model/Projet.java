@@ -52,9 +52,12 @@ public class Projet implements Serializable {
 	@OneToMany(mappedBy = "projet", cascade = CascadeType.ALL , orphanRemoval = true, fetch = FetchType.EAGER) 
     private List<Don> dons;
 
+	@Column(name = "category")
+	private String category;
+	
 	public Projet() {}
 
-	public Projet(final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description) {
+	public Projet(final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description, final String category) {
 		this.name = name;
 		this.somme_demande = somme_demande;
 		this.date_debut = date_debut;
@@ -62,13 +65,13 @@ public class Projet implements Serializable {
 		this.description = description;
 	}
 
-	public Projet(final Long projetId, final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description) {
-		this(name, somme_demande, date_debut, date_fin, description);
+	public Projet(final Long projetId, final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description, final String category) {
+		this(name, somme_demande, date_debut, date_fin, description, category);
 		this.projetId = projetId;
 	}
 
 	public ProjetDTO entity2Bean() {
-		return new ProjetDTO(this.projetId, this.name, this.somme_demande, this.date_debut, this.date_fin, this.description);
+		return new ProjetDTO(this.projetId, this.name, this.somme_demande, this.date_debut, this.date_fin, this.description, this.category);
 	}
 
 	public Long getProjetId() {
@@ -125,6 +128,14 @@ public class Projet implements Serializable {
 
 	public void setPath_img(String path_img) {
 		this.path_img = path_img;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	
 }

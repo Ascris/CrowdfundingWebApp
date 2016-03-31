@@ -5,7 +5,7 @@
 <html>
 
 <jsp:include page="/helpers/head_balise.jsp">
-	<jsp:param name="title" value="Project" />
+	<jsp:param name="title" value='${projet.name}' />
 </jsp:include>
 
 <body>
@@ -13,36 +13,24 @@
 	<jsp:include page="/helpers/headerConnexion.jsp" />
 	<!-- Contenu page -->
 
-<%-- <%=request.getParameter("project")%> --%>
-
 	<div class="container-fluid">
-		<p>Category : CATEGORIE</p>
+		<p>Category : ${projet.category}</p>
 	</div>
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3">
-				<p>Remaining Amount : MONTANT RESTANT</p>
+			<div class="col-md-4">
+				<p>Remaining Amount</p> <div class="remaining_amount" data-length="60"></div>
 				<s:if test="#session.customerConnected != null">
 					<s:url id="editDon" action="editDonAction">
 						<s:param name="projetId" >${projet.projetId}</s:param>
 					</s:url> <s:a href="%{editDon}">Faire un don</s:a>
 				</s:if>
 			</div>
-			<div class="col-md-9">
-				<p>BARRE DE PROGRESSION A METTRE ICI</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<p>Timeline :</p>
-			</div>
-			<div class="col-md-9">
-				<p class="timeline timeline-begin">Beginned :
-					${projet.date_debut}</p>
-				<p class="timeline timeline-middle">TIMELINE</p>
-				<p class="timeline timeline-end">Ends in : ${projet.date_fin}
-					TIMELINE</p>
+			<div class="col-md-8">
+				<p> Begin : ${projet.date_debut} </p>
+				<div class="timeline" data-length="90"></div>
+				<p> End : ${projet.date_fin} </p>
 			</div>
 		</div>
 	</div>
@@ -50,7 +38,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<p>${projet.name}by plop</p>
+				<p>${projet.name}by TEAMNAME</p>
 				<%-- <%= request.getParameter("team.name") --%>
 			</div>
 		</div>
@@ -65,7 +53,13 @@
 				</div>
 				<div class="row">
 					<p>Rating :</p>
-					<p>ETOILES ICI</p>
+					<div class="rating">
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+						<span> &#9734; </span>
+					</div>
 				</div>
 				<div class="row">
 					<textarea>${projet.description}</textarea>

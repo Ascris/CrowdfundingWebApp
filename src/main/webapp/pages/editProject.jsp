@@ -14,13 +14,14 @@
 	<h1>Creation d'un Projet</h1>
 
 	<s:form action="saveProjetAction">
-		<s:textfield name="projet.name" label="Nom de projet" />
-		<s:textfield name="projet.somme_demande" label="Somme demande" />
+		<s:textfield name="projet.name" label="Project Name" />
+		<s:textfield name="projet.somme_demande" label="How many money do you need ?" />
 		<!-- <s:textfield name="projet.date_fin" key="Date de fin" /> -->
-		<s:textarea name="projet.description" label="Commentaire" cols="50" rows="5" cssStyle="resize: none;"/>
-		<s:submit value="Valider" />
+		<s:textarea name="projet.description" label="Commentary" cols="50" rows="5" cssStyle="resize: none;"/>
+		<s:textfield name="projet.category" label="Category" />
+		<s:submit value="Validate" />
 	</s:form>
-	<button onclick="window.location.href='/spring/pages/index.jsp'">Annuler</button>
+	<button onclick="window.location.href='/spring/pages/index.jsp'">Cancel</button>
 
 
 <!-- FIN_Contenu page -->

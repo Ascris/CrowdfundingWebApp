@@ -25,20 +25,18 @@
 					<s:if test="#session.customerConnected != null">
 					<s:url id="viewProjet" action="viewProjetAction">
 						<s:param name="projetId" >${projet.projetId}</s:param>
-					</s:url> <s:a href="%{viewProjet}">Voir le projet</s:a>
+					</s:url> <s:a href="%{viewProjet}">See more</s:a>
 					</s:if>
 					</td>
 					
 				</s:if>
 				<s:if test="%{#tableau==1}">
 					<td>${projet.description}</td>
-					<s:if test="#session.customerConnected != null">
 						<td>
-							<s:url id="viewProjet" action="viewProjetDonAction">
+							<s:url id="viewProjet" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{viewProjet}">Voir le projet</s:a>
+							</s:url> <s:a href="%{viewProjet}">See more</s:a>
 						</td>
-					</s:if>
 				</tr>
 				</s:if>
 				
