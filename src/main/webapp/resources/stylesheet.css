@@ -68,6 +68,16 @@ div.footer {
 
 table {
 	text-align: center;
+	border: solid;
 	border-collapse: separate;
-	border-spacing: 5px 8px;
+	margin: auto;
+	cellspacing: 100px;
+	border-spacing: 150px;
 }
+
+tr {
+  border: 1px solid #500;
+  spacing: 50px;
+  width: 100%;
+}
+
