@@ -106,6 +106,25 @@
 				<result name="success" type="redirect">listTeamAction</result>
 				<result name="input" type="redirect">listTeamAction</result>
 		</action>
+		
+		<!-- Don Actions -->
+		
+		<action name="editDonAction" class="editDonAction" method="editDon">
+			<result name="success">pages/editDon.jsp</result>
+		</action>
+		
+		<action name="saveDonAction" class="editDonAction" method="saveDon">
+			<result name="success" type="redirect">listDonAction</result>
+		</action>
+		
+		<action name="listDonAction" class="listDonAction" method="listDon">
+			<result name="success">pages/manageDon.jsp</result>
+		</action>
+		
+		<action name="deleteDonAction" class="listDonAction" method="deleteDon">
+			<result name="success" type="redirect">listDonAction</result>
+		</action>
+		
 
 	</package>
 

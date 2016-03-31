@@ -23,6 +23,11 @@
 		<div class="row">
 			<div class="col-md-3">
 				<p>Remaining Amount : MONTANT RESTANT</p>
+				<s:if test="#session.customerConnected != null">
+					<s:url id="editDon" action="editDonAction">
+						<s:param name="projetId" >${projet.projetId}</s:param>
+					</s:url> <s:a href="%{editDon}">Faire un don</s:a>
+				</s:if>
 			</div>
 			<div class="col-md-9">
 				<p>BARRE DE PROGRESSION A METTRE ICI</p>

@@ -2,13 +2,18 @@ package model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import dto.ProjetDTO;
@@ -43,6 +48,9 @@ public class Projet implements Serializable {
 	
 	@Column(name = "path_img")
 	private String path_img;
+	
+	@OneToMany(mappedBy = "projet", cascade = CascadeType.ALL , orphanRemoval = true, fetch = FetchType.EAGER) 
+    private List<Don> dons;
 
 	public Projet() {}
 

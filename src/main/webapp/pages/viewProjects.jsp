@@ -20,23 +20,23 @@
 			<s:iterator value="projetList" var="projet" status="userStatus">
 				<s:if test="%{#tableau==0}">
 				<tr>
-					<td>${projet.description}</td>
+					<td>
+					${projet.description}
 					<s:if test="#session.customerConnected != null">
-	
-						<td>
-							<s:url id="viewAction" action="viewProjetAction">
-								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{viewAction}">Voir</s:a>
-						</td>
+					<s:url id="viewProjet" action="viewProjetAction">
+						<s:param name="projetId" >${projet.projetId}</s:param>
+					</s:url> <s:a href="%{viewProjet}">Voir le projet</s:a>
 					</s:if>
+					</td>
+					
 				</s:if>
 				<s:if test="%{#tableau==1}">
 					<td>${projet.description}</td>
 					<s:if test="#session.customerConnected != null">
 						<td>
-							<s:url id="viewAction" action="viewProjetAction">
+							<s:url id="viewProjet" action="viewProjetDonAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{viewAction}">Voir</s:a>
+							</s:url> <s:a href="%{viewProjet}">Voir le projet</s:a>
 						</td>
 					</s:if>
 				</tr>
