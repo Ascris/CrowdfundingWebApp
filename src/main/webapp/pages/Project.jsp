@@ -45,7 +45,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<p>${projet.name}by ${projet.teamName}</p>
+				<p>${projet.name}by plop</p>
 				<%-- <%= request.getParameter("team.name") --%>
 			</div>
 		</div>
