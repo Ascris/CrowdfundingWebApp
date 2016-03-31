@@ -33,9 +33,10 @@
 				<s:if test="%{#tableau==1}">
 					<td>${projet.description}</td>
 					<s:if test="#session.customerConnected != null">
-	
 						<td>
-							<s:url id="myeditAction" action="editProjetAction"/> <s:a href="%{editAction}">edit</s:a>
+							<s:url id="editAction" action="editProjetAction">
+								<s:param name="projetId" >${projet.projetId}</s:param>
+							</s:url> <s:a href="%{editAction}">edit</s:a>
 						</td>
 					</s:if>
 				</tr>
