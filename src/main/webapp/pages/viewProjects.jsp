@@ -24,9 +24,9 @@
 					<s:if test="#session.customerConnected != null">
 	
 						<td>
-							<s:url id="editAction" action="editProjetAction">
+							<s:url id="viewAction" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{editAction}">edit</s:a>
+							</s:url> <s:a href="%{viewAction}">Voir</s:a>
 						</td>
 					</s:if>
 				</s:if>
@@ -34,9 +34,9 @@
 					<td>${projet.description}</td>
 					<s:if test="#session.customerConnected != null">
 						<td>
-							<s:url id="editAction" action="editProjetAction">
+							<s:url id="viewAction" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
-							</s:url> <s:a href="%{editAction}">edit</s:a>
+							</s:url> <s:a href="%{viewAction}">Voir</s:a>
 						</td>
 					</s:if>
 				</tr>
@@ -50,6 +50,9 @@
 				</s:else>
 			
 			</s:iterator>
+			<s:if test="%{#tableau==1}">
+				</tr>
+			</s:if>
 		</table>
 	</s:if>
 	
