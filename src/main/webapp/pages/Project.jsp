@@ -20,7 +20,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-4">
-				<p>Remaining Amount</p> <div class="remaining_amount" data-length="60"></div>
+				<div class="remaining_amount" data-length="60"></div>
+				<p>REMAINING AMOUNT</p>
+				<p>Objective : ${projet.somme_demande}</p>
 				<s:if test="#session.customerConnected != null">
 					<s:url id="editDon" action="editDonAction">
 						<s:param name="projetId" >${projet.projetId}</s:param>
@@ -28,9 +30,9 @@
 				</s:if>
 			</div>
 			<div class="col-md-8">
-				<p> Begin : ${projet.date_debut} </p>
 				<div class="timeline" data-length="90"></div>
-				<p> End : ${projet.date_fin} </p>
+				<p> BEGIN : ${projet.date_debut} </p>
+				<p> END : ${projet.date_fin} </p>
 			</div>
 		</div>
 	</div>
