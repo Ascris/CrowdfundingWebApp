@@ -44,6 +44,9 @@ public class Projet implements Serializable {
 	@Column(name = "path_img")
 	private String path_img;
 
+	@Column(name = "category")
+	private String category;
+	
 	public Projet() {}
 
 	public Projet(final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description) {

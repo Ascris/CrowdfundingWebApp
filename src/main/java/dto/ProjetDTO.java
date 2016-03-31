@@ -25,6 +25,8 @@ public class ProjetDTO implements Serializable {
 	
 	private String path_img;
 
+	private String category;
+
 	public ProjetDTO() {}
 
 	public ProjetDTO(final Long projetId, final String name, final Float somme_demande,
@@ -105,6 +107,14 @@ public class ProjetDTO implements Serializable {
 
 	public void setPath_img(String path_img) {
 		this.path_img = path_img;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 }

@@ -16,7 +16,7 @@
 <%-- <%=request.getParameter("project")%> --%>
 
 	<div class="container-fluid">
-		<p>Category : CATEGORIE</p>
+		<p>Category : ${projet.category}</p>
 	</div>
 
 	<div class="container-fluid">
