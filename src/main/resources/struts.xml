@@ -82,6 +82,7 @@
 		
 		<action name="saveProjetAction" class="editProjetAction" method="saveProjet">
 			<result name="success" type="redirect">listProjetAction</result>
+			<result name="input" type="redirect">listProjetAction</result>
 		</action>
 		
 		

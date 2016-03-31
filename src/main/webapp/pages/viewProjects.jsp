@@ -44,9 +44,9 @@
 				<s:if test="%{#tableau==1}">
 					<s:set name="tableau">0</s:set>
 				</s:if>
-				<s:if test="%{#tableau==0}">
+				<s:else>
 					<s:set name="tableau">1</s:set>
-				</s:if>
+				</s:else>
 			
 			</s:iterator>
 		</table>

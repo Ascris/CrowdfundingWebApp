@@ -24,7 +24,7 @@
 	
 	<div>
 		<p>See projects list</p>
-		<button onclick="window.location='/spring/listProjetAction'">Projets</button>
+		<button onclick="window.location='/spring/viewListProjetAction'">Projets</button>
 	</div>
 	
 	<div>

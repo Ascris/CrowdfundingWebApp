@@ -36,7 +36,6 @@ public class EditProjetAction extends ActionSupport {
 				final Long projetId = Long.parseLong(projetIdString);
 				if (projetId != null) {
 					projet = projetService.getProjetById(projetId);
-
 				}
 			}
 		} catch (final Exception e) {
