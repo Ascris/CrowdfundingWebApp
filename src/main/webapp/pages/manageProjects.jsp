@@ -28,6 +28,7 @@
 					<td>${projet.somme_demande}</td>
 					<td>${projet.description}</td>
 					<td>${projet.date_debut}</td>
+					<td>${projet.date_fin}</td>
 					<td>
 					<s:if test="#session.customerConnected != null">
 						<td>

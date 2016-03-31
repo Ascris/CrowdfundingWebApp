@@ -36,7 +36,7 @@
 				<p class="timeline timeline-begin">Beginned :
 					${projet.date_debut}</p>
 				<p class="timeline timeline-middle">TIMELINE</p>
-				<p class="timeline timeline-end">Ends in : ${projet.date_debut}
+				<p class="timeline timeline-end">Ends in : ${projet.date_fin}
 					TIMELINE</p>
 			</div>
 		</div>
