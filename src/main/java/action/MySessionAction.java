@@ -21,6 +21,7 @@ public class MySessionAction {
 	
 	public static void putUser(CustomerDTO customer){
 		Map currentSession =  ActionContext.getContext().getSession();
+		currentSession.clear();
 		currentSession.put("customerConnected",customer);
 	}
 

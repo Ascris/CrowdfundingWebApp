@@ -14,7 +14,7 @@
 	<!-- Contenu page -->
 
 	<div class="container-fluid">
-		<p>Category : ${projet.category}</p>
+		<p>Category : PAS IMPLEMENTE</p>
 	</div>
 
 	<div class="container-fluid">
