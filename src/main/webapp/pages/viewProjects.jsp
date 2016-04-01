@@ -22,20 +22,22 @@
 				<tr>
 					<td>
 					${projet.description}
-					<s:if test="#session.customerConnected != null">
-					<s:url id="viewProjet" action="viewProjetAction">
-						<s:param name="projetId" >${projet.projetId}</s:param>
-					</s:url> <s:a href="%{viewProjet}">See more</s:a>
-					</s:if>
+						<div class= "project-overview">
+						<s:url id="viewProjet" action="viewProjetAction">
+							<s:param name="projetId" >${projet.projetId}</s:param>
+						</s:url> <s:a href="%{viewProjet}">See more</s:a>
+						</div>
 					</td>
 					
 				</s:if>
 				<s:if test="%{#tableau==1}">
 					<td>${projet.description}</td>
 						<td>
+							<div class= "project-overview"> 
 							<s:url id="viewProjet" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
 							</s:url> <s:a href="%{viewProjet}">See more</s:a>
+							</div>
 						</td>
 				</tr>
 				</s:if>

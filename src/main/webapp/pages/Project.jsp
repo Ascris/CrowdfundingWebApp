@@ -14,25 +14,25 @@
 	<!-- Contenu page -->
 
 	<div class="container-fluid">
-		<p>Category : PAS IMPLEMENTE</p>
+		<h3><u><b>Category :</b></u> ${projet.category}</h3>
 	</div>
 
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-4">
+				<p>
 				<div class="remaining_amount" data-length="60"></div>
-				<p>REMAINING AMOUNT</p>
-				<p>Objective : ${projet.somme_demande}</p>
+				<p>MONEY RECOLTED on ${projet.somme_demande} euros to reach</p>
 				<s:if test="#session.customerConnected != null">
 					<s:url id="editDon" action="editDonAction">
 						<s:param name="projetId" >${projet.projetId}</s:param>
-					</s:url> <s:a href="%{editDon}">Faire un don</s:a>
+					</s:url> <s:a href="%{editDon}">Make a donation</s:a>
 				</s:if>
 			</div>
 			<div class="col-md-8">
 				<div class="timeline" data-length="90"></div>
-				<p> BEGIN : ${projet.date_debut} </p>
-				<p> END : ${projet.date_fin} </p>
+				<p> Beginned ${projet.date_debut} </p>
+				<p> ends on ${projet.date_fin} </p>
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<p>${projet.name}by TEAMNAME</p>
+				<h2><b>${projet.name}</b> by TEAMNAME</h2>
 				<%-- <%= request.getParameter("team.name") --%>
 			</div>
 		</div>
@@ -71,7 +71,7 @@
 				<p>NB DONATEURS curators</p>
 				<div class="palliate">
 					<p>Objective : ${projet.somme_demande}</p>
-					<textarea> Palliate reached ! </textarea>
+					<textarea> Palliate numbre # reached ! </textarea>
 				</div>
 			</div>
 		</div>

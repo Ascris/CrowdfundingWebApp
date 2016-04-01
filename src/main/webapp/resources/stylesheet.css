@@ -42,8 +42,13 @@ div.headerConnexion {
 
 div.bandeau_intro {
 	text-align: center;
-	background-color: red;
+	color: #e1dfb9;
+	background-color: #401277;
 	border: 2px solid;
+	text-shadow: white;
+/* 	width : 90%; */
+	font-family: fantasy;
+	font-size: large;
 }
 
 div.home_left {
@@ -58,12 +63,43 @@ div.contenu_centre {
 	text-align: center;
 }
 
+div.contenu_centre button{
+	height : 70px;
+	width : 40%;
+	background-color: #ce5c00;
+	font-size: medium;
+}
+
+div.contenu_centre button:hover{
+	background-color: #fe8c00;
+}
+
 div.footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	border: 2px solid;
 	text-align: center;
+}
+
+/* viewProjects */
+div.project-overview{
+	width : 50%;	
+    margin: 10px 10px;
+}
+
+div.project-overview a{
+	width : 100%;
+	height : 80px;
+	background-color: #3465a4;
+	color : #e2e2d3;
+	border: 2px solid;
+    padding: 7px 7px;
+    margin: 10px 10px;
+}
+
+div.project-overview a:hover {
+	background-color: #5485c4;
 }
 
 table.viewProjectONLY {

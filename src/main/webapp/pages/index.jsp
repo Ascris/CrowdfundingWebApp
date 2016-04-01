@@ -18,18 +18,15 @@
 
 <div class="contenu_centre">
 	<div>
-		<p>See users list</p>
-		<button onclick="window.location='/spring/listCustomerAction'">Fooders</button>
+		<button onclick="window.location='/spring/listCustomerAction'">See users list</button>
 	</div>
 	
 	<div>
-		<p>See projects list</p>
-		<button onclick="window.location='/spring/viewListProjetAction'">Projets</button>
+		<button onclick="window.location='/spring/viewListProjetAction'">See projects list</button>
 	</div>
 	
 	<div>
-		<p>See teams list</p>
-		<button onclick="window.location='/spring/listTeamAction'">Projets</button>
+		<button onclick="window.location='/spring/listTeamAction'">See teams list</button>
 	</div>
 </div>
 
