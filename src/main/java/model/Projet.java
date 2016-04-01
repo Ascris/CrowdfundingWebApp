@@ -47,27 +47,22 @@ public class Projet implements Serializable {
 	private String description;
 	
 	@Column(name = "path_img")
-	private String path_img;
-	
-	@OneToMany(mappedBy = "projet", cascade = CascadeType.ALL , orphanRemoval = true, fetch = FetchType.EAGER) 
-    private List<Don> dons;
+	private String path_img;	
 
 	@Column(name = "category")
 	private String category;
 	
 	public Projet() {}
-
-	public Projet(final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description, final String category) {
+	public Projet(Long projetId, String name, Float somme_demande, Date date_debut, Date date_fin, String description,
+			String category) {
+		super();
+		this.projetId = projetId;
 		this.name = name;
 		this.somme_demande = somme_demande;
 		this.date_debut = date_debut;
 		this.date_fin = date_fin;
 		this.description = description;
-	}
-
-	public Projet(final Long projetId, final String name, final Float somme_demande, final Date date_debut, final Date date_fin, final String description, final String category) {
-		this(name, somme_demande, date_debut, date_fin, description, category);
-		this.projetId = projetId;
+		this.category = category;
 	}
 
 	public ProjetDTO entity2Bean() {
@@ -136,6 +131,10 @@ public class Projet implements Serializable {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+	
+	public String getResume(){
+		return description.substring(0, 300)+"...";
 	}
 	
 }

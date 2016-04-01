@@ -24,7 +24,6 @@
 				<th>Nom</th>
 				<th>Date de creation</th>
 				<th>Commentaire</th>
-				<th>mdplol</th>
 				<th></th>
 			</tr>
 			<!-- Grâce à s:iterator, on peut iterer sur une liste se situant dans le code java. 
@@ -41,7 +40,6 @@
 					<td>${customer.name}</td>
 					<td>${customer.formatCreatedDate}</td>
 					<td>${customer.address}</td>
-					<td>${customer.mdp}</td>
 					<!-- On définit ici une url qui référence l'action deleteCustomerAction
 					 définie dans struts.xml, puis on l'affecte à un lien -->
 					<td><s:url id="deleteAction" action="deleteCustomerAction">

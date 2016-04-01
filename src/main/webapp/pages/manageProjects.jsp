@@ -29,7 +29,6 @@
 					<td>${projet.name}</td>
 					<td>${projet.somme_demande}</td>
 					<td>${projet.category}</td>
-					<td>${projet.description}</td>
 					<td>${projet.date_debut}</td>
 					<td>${projet.date_fin}</td>
 					<td>

@@ -37,6 +37,12 @@ public class EditProjetAction extends ActionSupport {
 				if (projetId != null) {
 					projet = projetService.getProjetById(projetId);
 				}
+				else{
+					projet = new ProjetDTO();
+				}
+			}
+			else{
+				projet = new ProjetDTO();
 			}
 		} catch (final Exception e) {
 		}

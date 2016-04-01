@@ -41,6 +41,12 @@ public class EditDonAction extends ActionSupport {
 				if (donId != null) {
 					don = donService.getDonById(donId);
 				}
+				else{
+					don = new DonDTO();
+				}
+			}
+			else{
+				don = new DonDTO();
 			}
 		} catch (final Exception e) {
 			don = new DonDTO();
@@ -56,7 +62,9 @@ public class EditDonAction extends ActionSupport {
 			}
 		} catch (final Exception e) {
 		}
-		don.setCustomer(Double.toString(MySessionAction.getUser().getCustomerId()));
+		
+		String c=Double.toString(MySessionAction.getUser().getCustomerId());
+		don.setCustomer(c);
 		return SUCCESS;
 	}
 

@@ -16,29 +16,33 @@
 
 	<!-- implicidement, customerList fait en fait appel à getCustomerList() -->
 	<s:if test="projetList != null && projetList.size() > 0">
-		<table class="viewProjectONLY">
+		<table class="">
 			<s:iterator value="projetList" var="projet" status="userStatus">
 				<s:if test="%{#tableau==0}">
 				<tr>
 					<td>
-					${projet.description}
+					<p><b>${projet.name } : </b></p>
+					${projet.getResume()}
 						<div class= "project-overview">
 						<s:url id="viewProjet" action="viewProjetAction">
 							<s:param name="projetId" >${projet.projetId}</s:param>
 						</s:url> <s:a href="%{viewProjet}">See more</s:a>
 						</div>
+						<p></p>
 					</td>
 					
 				</s:if>
 				<s:if test="%{#tableau==1}">
-					<td>${projet.description}</td>
-						<td>
+					<td>
+					<p><b>${projet.name } : </b></p>
+					${projet.getResume()}
 							<div class= "project-overview"> 
 							<s:url id="viewProjet" action="viewProjetAction">
 								<s:param name="projetId" >${projet.projetId}</s:param>
 							</s:url> <s:a href="%{viewProjet}">See more</s:a>
 							</div>
 						</td>
+						<p></p>
 				</tr>
 				</s:if>
 				

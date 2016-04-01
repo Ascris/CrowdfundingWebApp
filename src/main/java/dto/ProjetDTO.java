@@ -118,5 +118,9 @@ public class ProjetDTO implements Serializable {
 	public void setCategory(String category) {
 		this.category = category;
 	}
+	
+	public String getResume(){
+		return description.substring(0, 300)+"...";
+	}
 
 }
