@@ -14,6 +14,7 @@
 	<h1>Creation d'un Don</h1>
 
 	<s:form action="saveDonAction">
+		<s:hidden name="don.customer" label="plop"/>
 		<s:textarea name="don.don" label="Don" value=""> </s:textarea>
 		<s:submit value="Valider" />
 	</s:form>

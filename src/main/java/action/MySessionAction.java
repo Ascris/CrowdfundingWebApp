@@ -23,6 +23,7 @@ public class MySessionAction {
 		Map currentSession =  ActionContext.getContext().getSession();
 		currentSession.clear();
 		currentSession.put("customerConnected",customer);
+		ActionContext.getContext().setSession(currentSession);
 	}
 
 }

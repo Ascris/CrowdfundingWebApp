@@ -16,7 +16,6 @@ import dto.CustomerDTO;
 import service.CustomerService;
 
 @Controller
-@SessionAttributes("user")
 public class ConnexionAction {
 	
 	private static final String SUCCESS = "success";
@@ -43,11 +42,11 @@ public class ConnexionAction {
 			
 		} catch (final Exception e) {
 		}
-		MySessionAction.putUser(customer);
 		if (customer == null) {
 			return ERROR;
 		}
 		else{
+			MySessionAction.putUser(customer);
 			return SUCCESS;
 		}
 	}

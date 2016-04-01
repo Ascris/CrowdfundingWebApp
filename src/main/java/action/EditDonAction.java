@@ -43,34 +43,26 @@ public class EditDonAction extends ActionSupport {
 				}
 			}
 		} catch (final Exception e) {
+			don = new DonDTO();
 		}
 		
-		if (don == null) {
-			don = new DonDTO();
-			try {
-				final String projetIdString = request.getParameter("projetId");
-				if (projetIdString != null) {
-					final Long projetId = Long.parseLong(projetIdString);
-					if (projetId != null) {
-						don.setProjet(projetService.getProjetById(projetId).getProjetId().toString());
-					}
-					else{
-						don.setProjet("0");
-					}
+		try {
+			final String projetIdString = request.getParameter("projetId");
+			if (projetIdString != null) {
+				final Long projetId = Long.parseLong(projetIdString);
+				if (projetId != null) {
+					don.setProjet(projetService.getProjetById(projetId).getProjetId().toString());
 				}
-			} catch (final Exception e) {
 			}
-			don.setCustomer(Double.toString(MySessionAction.getUser().getCustomerId()));
+		} catch (final Exception e) {
 		}
+		don.setCustomer(Double.toString(MySessionAction.getUser().getCustomerId()));
 		return SUCCESS;
 	}
 
 	@SuppressWarnings("deprecation")
 	public String saveDon() throws Exception {
-		if (don.getDonId() == null) {
-
-		}
-		
+		don.setCustomer(Double.toString(MySessionAction.getUser().getCustomerId()));
 		donService.saveDon(don);
 
 		return SUCCESS;
